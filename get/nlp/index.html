@@ -1,0 +1,820 @@
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Natural Language Processing | getAwesomeness()</title>
+    <meta name="keywords" content="awesome,awesomeness,getAwesomeness">
+    <meta name="description" content="Use getAwesomeness() to retrieve all amazing awesomeness from Github.">
+    
+      
+      <link rel="stylesheet" href="/assets/styles-36a7a3c2f617e9a498a4613e48f641bd.css" />
+    
+  </head>
+
+  
+  <!--[if lt IE 9]>
+    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+  <![endif]-->
+
+  <body>
+  	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">getAwesomeness</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <iframe src="http://ghbtns.com/github-btn.html?user=panzhangwang&amp;repo=getawesomeness&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="45" style="padding: 15px 0 0 15px;"></iframe>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" id="typeahead" class="form-control" placeholder="Search List">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  	<div class="container">
+  		
+  		<div class="messages">
+        
+
+
+
+
+
+
+
+      </div>
+    		
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">			  
+				
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="general">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_general" aria-expanded="true" aria-controls="_general">
+				          General
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_general" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="general">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/c">C</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cpp">C/C++</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/d">D</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/delphi">Delphi</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/fortran">Fortran</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/go">Go</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/rust">Rust</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/net">.Net</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/python">Python</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ruby">Ruby</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/swift">Swift</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="scripting">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_scripting" aria-expanded="true" aria-controls="_scripting">
+				          Scripting
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_scripting" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="scripting">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/autohotkey">AutoHotkey</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/coldfusion">ColdFusion</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/groovy">Groovy</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/js">JavaScript</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/shell">Shell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/lua">Lua</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web.framework">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web.framework" aria-expanded="true" aria-controls="_web.framework">
+				          Web Framework
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web.framework" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web.framework">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/cakephp">CakePHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/laravel">Laravel</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/symfony">Symfony</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="jvm">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_jvm" aria-expanded="true" aria-controls="_jvm">
+				          JVM
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_jvm" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="jvm">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/java">Java</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/scala">Scala</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="domain.specific">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_domain.specific" aria-expanded="true" aria-controls="_domain.specific">
+				          Domain Specific
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_domain.specific" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="domain.specific">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/r">R</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="functional">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_functional" aria-expanded="true" aria-controls="_functional">
+				          Functional
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_functional" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="functional">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/elixir">Elixir</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ocaml">OCaml</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/haskell">Haskell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang">Erlang</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang_bm">Erlang Bookmarks</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web" aria-expanded="true" aria-controls="_web">
+				          Web
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/angularjs">AngularJS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/backbone">Backbone</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dojo">Dojo</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/jquery">jQuery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/knockout">Knockout</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nodejs">Node</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/react">React</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/webcomponents">Web Components</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="mobile">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_mobile" aria-expanded="true" aria-controls="_mobile">
+				          Mobile
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_mobile" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="mobile">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/android">Android</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/apple">Apple</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ios">iOS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cordova">Cordova</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="frontend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_frontend" aria-expanded="true" aria-controls="_frontend">
+				          Frontend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_frontend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="frontend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docs">Documentation</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/svg">SVG</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/images">Images</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/front_dev">Frontend Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/h5">HTML5</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="backend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_backend" aria-expanded="true" aria-controls="_backend">
+				          Backend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_backend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="backend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docker">Docker</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/gamedev">Game Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openresty">OpenResty</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/servicesengineering">Services Engineering</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/sysadmin">Sysadmin</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="danymic">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_danymic" aria-expanded="true" aria-controls="_danymic">
+				          Danymic
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_danymic" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="danymic">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/julia">Julia</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="editors">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_editors" aria-expanded="true" aria-controls="_editors">
+				          Editors
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_editors" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="editors">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/sublime">Sublime Text</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vim">Vim</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="self.education">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_self.education" aria-expanded="true" aria-controls="_self.education">
+				          Self Education
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_self.education" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="self.education">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/algorithm">Algorithm</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/conferences">Conferences</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/testbook">Testing Books</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/koans">Koans</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openscience">Open Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/papers">Papers</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/talks">Talks</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/weekly">Weekly Newsletters</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="data">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_data" aria-expanded="true" aria-controls="_data">
+				          Data
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_data" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="data">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/analytics">Analytics</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/db">Database</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/datascience">Data Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dataset">Dataset</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ml">Machine Learning</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/hadoop">Hadoop</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="dev.tools">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_dev.tools" aria-expanded="true" aria-controls="_dev.tools">
+				          Dev Tools
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_dev.tools" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="dev.tools">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/tools">Tools of The Trade</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dotfiles">Dotfiles</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/devenv">Dev Env</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="platforms">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_platforms" aria-expanded="true" aria-controls="_platforms">
+				          Platforms
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_platforms" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="platforms">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/osx">OS X</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="others">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_others" aria-expanded="true" aria-controls="_others">
+				          Others
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_others" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="others">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/ccm">Creative Commons Media</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ciandcd">Continuous Delivery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/community">Community</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/styleguide">Styleguides</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nlp">Natural Language Processing</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vagrant">Vagrant</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/wpo">Web Performance Optimization</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+      </div>
+		</div>
+		<div class="col-md-7">
+			<a href="https://github.com/edobashira/speech-language-processing" class="btn btn-primary pull-right" target="_blank">View on Github</a>	
+			<article class="markdown-body">
+	  		<p>Speech and Natural Language Processing</p>
+<p>#######################################
+.. image:: <a href="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg">https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg</a>
+   :alt: Awesome
+   :target: <a href="https://github.com/sindresorhus/awesome">https://github.com/sindresorhus/awesome</a>
+A curated list of speech and natural language processing resources. Other lists can be found in this <code>list &lt;https://github.com/bayandin/awesome-awesomeness&gt;</code>_. If you want to contribute to this list (please do), send me a pull request.  All Sub-caterogires are  listed in alphabetical order</p>
+<h2 id="finite-state-toolkits-and-regular-expressions">Finite State Toolkits and Regular Expressions</h2>
+<ul>
+<li><p><code>AT&amp;T FSM Library &lt;http://www2.research.att.com/~fsmtools/fsm/&gt;</code>_ The AT&amp;T FSM libraryTM is a set of general-purpose software tools available for Unix, for building, combining, optimizing, and searching weighted finite-state acceptors and transducers.</p>
+</li>
+<li><p><code>Carmel &lt;https://github.com/graehl/carmel&gt;</code>_ Finite-state toolkit, EM and Bayesian (Gibbs sampling) training for FST and context-free derivation forests/</p>
+</li>
+<li><p><code>Categorial semiring &lt;http://openfst.org/twiki/pub/Contrib/FstContrib/categorial-1.3.3.tar.gz&gt;</code>_ Categorial semiring as described in <code>Sproat et al. 2014 &lt;http://www.mitpressjournals.org/doi/pdf/10.1162/COLI_a_00198&gt;</code>_</p>
+</li>
+<li><p><code>dk.brics.automaton &lt;http://www.brics.dk/automaton/&gt;</code>_ Java toolkit for FSAs and regular expression.</p>
+</li>
+<li><p><code>Fare &lt;https://github.com/moodmosaic/Fare&gt;</code>_ Fare is a finite state and regular expression libary for the .NET framework written in C#.
+am is a JavaScript library for working with automata and formal grammars for
+regular and context-free languages</p>
+</li>
+<li><p><code>Foma &lt;https://code.google.com/p/foma/&gt;</code>_ Finite-state compiler and C library </p>
+</li>
+<li><p><code>fsa &lt;http:&gt;</code>_ Toolkit used in  RWTH ASR engine</p>
+</li>
+<li><p><code>fsm2.0 &lt;http://tagh.de/tom/wp-content/uploads/fsm-12.6.2012.zip&gt;</code>_ Thomas Hanneforths fsm 2.0 library written C++ has a few nice operations
+such as three-way composition</p>
+</li>
+<li><p><code>fstrain &lt;https://github.com/markusdr/fstrain&gt;</code>_ A toolkit for training finite-state models</p>
+</li>
+<li><p><code>jopenfst &lt;https://github.com/steveash/jopenfst&gt;</code>_ Java port of the C++ OpenFst library; originally forked from the CMU Sphinx project</p>
+</li>
+</ul>
+<ul>
+<li><p><code>Kleene programming language &lt;https://github.com/krbeesley/kleene-lang&gt;</code>_ High level finite state programming language built on top of OpenFst.</p>
+</li>
+<li><p><code>MIT FST Toolkit &lt;http://people.csail.mit.edu/ilh/fst/&gt;</code>_ WFST toolkit no
+maintained anymore but feature a few commands not found in other toolkits</p>
+</li>
+<li><p><code>MoMs-for-StochasticLanguages &lt;https://github.com/ICML14MoMCompare/MoMs-for-StochasticLanguages&gt;</code>_ Spectral and other training algorithms for WFSAs.</p>
+</li>
+<li><p><code>n Shortest Path for PDT &lt;https://github.com/kho/openfst&gt;</code>_ n Shortest Path for PDT</p>
+</li>
+<li><p><code>Noam &lt;https://github.com/izuzak/noam&gt;</code>_<em> 
+&quot;Noam is a JavaScript library for working with automata and formal grammars for regular and context-free
+languages&quot;. Also has pretty cool examples using  <code>viz.js &lt;https://github.com/mdaines/viz.js/&gt;</code></em></p>
+</li>
+<li><p><code>OpenFst &lt;http://openfst.org&gt;</code>_ OpenFst is a library for constructing, combining, optimizing, and searching weighted finite-state transducers (FSTs).</p>
+</li>
+<li><p><code>openfst-utils &lt;https://github.com/benob/openfst-utils&gt;</code>_ Nice set of
+utilities for OpenFst includes implementation of Categorial
+semirings.openfst-utils.</p>
+</li>
+<li><p><code>openlat &lt;https://github.com/benob/openlat&gt;</code>_ Toolkit for manipulating word
+lattice built on top of OpenFst. Includes support for reading and writing HTK
+compatible lattices.</p>
+</li>
+<li><p><code>PyFst &lt;https://github.com/vchahun/pyfst&gt;</code>_ Python interface to OpenFst</p>
+</li>
+<li><p><code>SFST - Stuttgart Finite State Transducer Tools &lt;http://www.ims.uni-stuttgart.de/tcl/SOFTWARE/SFST.html&gt;</code>_ 
+&quot;SFST is a toolbox for the implementation of morphological analysers and other
+tools which are based on finite state transducer technology.&quot;</p>
+</li>
+<li><p><code>Treba &lt;https://code.google.com/p/treba/&gt;</code>_ &quot;Treba is a basic command-line tool for training, decoding, and calculating with weighted (probabilistic) finite state automata (PFSA) and Hidden Markov Models (HMMs).&quot;</p>
+</li>
+</ul>
+<p>Many of the toools in the machine translation section also implement interesting graph and semiring operations.</p>
+<h2 id="language-modelling-toolkits">Language Modelling Toolkits</h2>
+<ul>
+<li><p><code>Bayesian Recurrent Neural Network for Language Modeling &lt;http://chien.cm.nctu.edu.tw/bayesian-recurrent-neural-network-for-language-modeling/&gt;</code>_ This is a C/C++ implementation for Bayesian recurrent neural network for language modeling (BRNNLM)</p>
+</li>
+<li><p><code>Berkeley LM &lt;http://code.google.com/p/berkeleylm/&gt;</code>_</p>
+</li>
+<li><p><code>Bigfatlm &lt;https://github.com/jhclark/bigfatlm&gt;</code>_ 
+Provides Hadoop training of Kneser-ney language models, written in Java.</p>
+</li>
+<li><p><code>CSLM &lt;http://www-lium.univ-lemans.fr/cslm/&gt;</code>_ &quot;Continuous Space Language
+Model toolkit.  CSLM toolkit is open-source software which implements the so-called continuous
+space language model.</p>
+</li>
+<li><p><code>DALM &lt;https://github.com/jnory/DALM&gt;</code>_ Double array language model. </p>
+</li>
+<li><p><code>KenLM &lt;http://kheafield.com/code/kenlm/&gt;</code>_
+Kenneth Heafield&#39;s language model toolkit, uses a very fast and low memory
+representation.</p>
+</li>
+<li><p><code>lwlm &lt;http://chasen.org/~daiti-m/dist/lwlm/&gt;</code>_ lwlm is an exact, full Bayesian implementation of the Latent Words Language Model (Deschacht and Moens, 2009).</p>
+</li>
+<li><p><code>Maximum Entropy Modeling &lt;http://homepages.inf.ed.ac.uk/lzhang10/maxent.html&gt;</code>_ 
+Le Zhang has a comprehensive set of links related MaxEnt models.</p>
+</li>
+<li><p><code>Maximum entropy language models: SRILM extension &lt;http://www.phon.ioc.ee/dokuwiki/doku.php?id=people:tanel:srilm-me.en&gt;</code>_
+&quot;This patch adds the functionality to train and apply maximum entropy (MaxEnt)
+language models to the SRILM toolkit. Currently, only N-gram features are
+supported&quot;</p>
+</li>
+<li><p><code>mitlm &lt;https://code.google.com/p/mitlm/&gt;</code>_ 
+My personal favourite LM toolkit,  super fast and seems to get slightly higher
+accuracy.</p>
+</li>
+<li><p><code>MSRLM
+&lt;http://research.microsoft.com/en-us/downloads/78e26f9c-fc9a-44bb-80a7-69324c62df8c/default.aspx&gt;</code>_
+&quot;This scalable language-model tool is used to build language models from large
+amounts of data. It supports modified absolute discounting and Kneser-Ney
+smoothing.&quot;</p>
+</li>
+<li><p><code>OpenGrm &lt;http://opengrm.org&gt;</code>_ 
+Language modelling toolkit for use with OpenFst.</p>
+</li>
+<li><p><code>cpyp &lt;https://github.com/redpony/cpyp&gt;</code>_ C++ library for modeling with Pitman-Yor processes</p>
+</li>
+<li><p><code>RandLM &lt;http://sourceforge.net/projects/randlm/&gt;</code>_ Bloom filter based random language models</p>
+</li>
+<li><p><code>RNNLM &lt;http://www.fit.vutbr.cz/~imikolov/rnnlm/&gt;</code>_ 
+Recurrent neural network language model toolkit.</p>
+</li>
+<li><p><code>Refr &lt;http://code.google.com/p/refr&gt;</code>_ 
+Re-ranking framework from the Johns-Hopkins  workshop on confusion language
+modelling.</p>
+</li>
+<li><p><code>rwthlm &lt;http://www-i6.informatik.rwth-aachen.de/web/Software/rwthlm.php&gt;</code>_  A toolkit for training neural network language models (feedforward, recurrent, and long short-term memory neural networks). The software was written by Martin Sundermeyer.</p>
+</li>
+<li><p><code>SRILM &lt;http://www.speech.sri.com/projects/ srilm/&gt;</code>_ Very popular toolkit,
+source code avaliable but only non-free for commerical use.</p>
+</li>
+</ul>
+<h2 id="speech-recognition">Speech Recognition</h2>
+<ul>
+<li><p><code>AaltoASR &lt;https://github.com/aalto-speech&gt;</code>_ Aalto Automatic Speech Recognition tools</p>
+</li>
+<li><p><code>Barista &lt;https://github.com/usc-sail/barista&gt;</code>_ Barista is an open-source framework for concurrent speech processing.</p>
+</li>
+<li><p><code>Bavieca &lt;http://www.bavieca.org/index.html&gt;</code>_ New open source toolkit
+featuring static and dynamic decoders.</p>
+</li>
+<li><p><code>kaldi-nnet-dur-model &lt;https://github.com/alumae/kaldi-nnet-dur-model&gt;</code><em> Neural network phone duration model on top of the Kaldi speech recognition framework, <code>(Interspeech paper) &lt;https://phon.ioc.ee/dokuwiki/lib/exe/fetch.php?media=people:tanel:icassp2014-durmodel.pdf&gt;</code></em></p>
+</li>
+<li><p><code>CMU Sphinx &lt;http://cmusphinx.sourceforge.net/&gt;</code>_ Open Source Toolkit For Speech
+Recognition Project by Carnegie Mellon University</p>
+</li>
+<li><p><code>HTK &lt;http://htk.eng.cam.ac.uk/&gt;</code>_ &quot;The Hidden Markov Model Toolkit (HTK) is a 
+portable toolkit for building and manipulating hidden Markov models.&quot;</p>
+</li>
+<li><p><code>Juicer &lt;https://github.com/idiap/juicer&gt;</code>_  Juicer is a Weighted Finite State Transducer (WFST) based decoder for Automatic Speech Recognition (ASR).</p>
+</li>
+<li><p><code>Julius &lt;http://julius.sourceforge.jp/en_index.php&gt;</code>_ &quot;Julius is a high-performance, two-pass large vocabulary continuous speech recognition (LVCSR) decoder software for speech-related researchers and developers.&quot;</p>
+</li>
+<li><p><code>Kaldi &lt;http://kaldi.sourceforge.net/&gt;</code>_ Modern open source toolkit lead by
+Dan Povey featuring many state-of-the-art techniques.</p>
+</li>
+<li><p><code>OpenDcd &lt;http://opendcd.org/&gt;</code>_ An Open Source WFST based Speech Recognition Decoder.</p>
+</li>
+<li><p><code>Phonetisaurus &lt;https://code.google.com/p/phonetisaurus/&gt;</code>_ 
+Josef Novak&#39;s super fast WFST based Phoneticizer, site also 
+has some really nice  tutorials slides.</p>
+</li>
+<li><p><code>Sail Align &lt;https://github.com/nassosoassos/sail_align&gt;</code>_ SailAlign is an open-source software toolkit for robust long speech-text alignment implementing an adaptive, iterative speech recognition and text alignment scheme that allows for the processing of very long (and possibly noisy) audio and is robust to transcription errors. It is mainly written as a perl library but its functionality also depends…</p>
+</li>
+<li><p><code>SCARF: A Segmental CRF Toolkit for Speech Recognition
+&lt;http://research.microsoft.com/en-us/projects/scarf/&gt;</code>_
+&quot;SCARF is a toolkit for doing speech recognition with segmental conditional
+random fields.&quot;</p>
+</li>
+<li><p><code>trainc &lt;https://code.google.com/p/trainc/&gt;</code>_ 
+David Rybach and Michael Riley&#39;s tool for direct construction of
+context-dependency transducers (Interspeech best paper).</p>
+</li>
+<li><p><code>RASR &lt;http://www-i6.informatik.rwth-aachen.de/rwth-asr/&gt;</code>_ RWTH ASR - The
+RWTH Aachen University Speech Recognition System</p>
+</li>
+</ul>
+<h2 id="signal-processing">Signal Processing</h2>
+<ul>
+<li><code>An Interactive Source Separation Editor &lt;http://isse.sourceforge.net/&gt;</code>_ &quot;ISSE is an open-source, freely available, cross-platform audio editing tool that allows a user to perform source separation by painting on time-frequency visualisations of sound.&quot;</li>
+<li><code>Bob &lt;https://github.com/idiap/bob&gt;</code>_ Bob is a free signal-processing and machine learning toolbox originally developed by the Biometrics group at Idiap Research Institute, in Switzerland. </li>
+<li><code>Matlab Audio Processing Examples &lt;http://www.ee.columbia.edu/~dpwe/resources/matlab/&gt;</code>_</li>
+<li><code>SAcC - Subband Autocorrelation Classification Pitch Tracker &lt;http://labrosa.ee.columbia.edu/projects/SAcC/&gt;</code>_  &quot;SAcC is a (compiled) Matlab script that performs noise- robust pitch tracking by classifying the autocorrelations of a set of subbands using an MLP neural network.&quot;</li>
+</ul>
+<h2 id="text-to-speech">Text-to-Speech</h2>
+<ul>
+<li><code>HTS &lt;http://hts.sp.nitech.ac.jp/&gt;</code>_ HMM-based speech synthesis</li>
+<li><code>RusPhonetizer &lt;https://github.com/wilpert/RusPhonetizer&gt;</code>_ Grammar rules and dictionaries for the phonetic transcription of Russian sentences</li>
+</ul>
+<h2 id="speech-data">Speech Data</h2>
+<ul>
+<li><code>cmudict &lt;https://github.com/cmusphinx/cmudict&gt;</code>_ CMUdict (the Carnegie Mellon Pronouncing Dictionary) is a free pronouncing dictionary of English.</li>
+<li><code>LibriSpeech ASR corpus &lt;http://www.openslr.org/12/&gt;</code>_ LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned.</li>
+<li><code>TED-LIUM Corpus &lt;http://www-lium.univ-lemans.fr/en/content/ted-lium-corpus&gt;</code>_ The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website. </li>
+</ul>
+<h2 id="machine-translation">Machine Translation</h2>
+<ul>
+<li><p><code>Berkeley Aligner &lt;https://code.google.com/p/berkeleyaligner/&gt;</code>_ 
+&quot;...a word alignment software package that implements recent innovations in
+unsupervised word alignment.&quot;</p>
+</li>
+<li><p><code>cdec &lt;https://github.com/redpony/cdec&gt;</code>_ 
+&quot;Decoder, aligner, and model optimizer for statistical machine translation and
+other structured prediction models based on (mostly) context-free formalisms&quot;</p>
+</li>
+<li><p><code>Jane &lt;http://www-i6.informatik.rwth-aachen.de/jane/&gt;</code>_ 
+&quot;Jane is RWTH&#39;s open source statistical machine translation toolkit. Jane
+supports state-of-the-art techniques for phrase-based and hierarchical
+phrase-based machine translation.&quot; </p>
+</li>
+<li><p><code>Joshua &lt;http://joshua-decoder.org/&gt;</code>_ 
+Hierarchical and syntax based machine translation decoder written in Java.</p>
+</li>
+<li><p><code>Moses &lt;http://www.statmt.org/moses/&gt;</code>_ 
+Standard open source machine translation toolkit.</p>
+</li>
+<li><p><code>alignment-with-openfst &lt;https://github.com/ldmt-muri/alignment-with-openfst&gt;</code>_</p>
+</li>
+<li><p><code>zmert &lt;http://cs.jhu.edu/~ozaidan/zmert/&gt;</code><em> 
+Nice Java Mert implementation by <code>Omar F. Zaidan &lt;http://www.cs.jhu.edu/~ozaidan/&gt;</code></em></p>
+</li>
+</ul>
+<h2 id="machine-learning">Machine Learning</h2>
+<ul>
+<li><p><code>BIDData &lt;https://github.com/BIDData&gt;</code>_ BIDMat is a matrix library intended to support large-scale exploratory data analysis. Its sister library BIDMach implements the machine learning layer.</p>
+</li>
+<li><p><code>libFM: Factorization Machine Library &lt;http://libfm.org/&gt;</code>_</p>
+</li>
+<li><p><code>sofia-ml &lt;https://code.google.com/p/sofia-ml/&gt;</code>_ Fast incremental learning
+algorithms for classification, regression, ranking from Google. </p>
+</li>
+<li><p><code>Spearmint &lt;https://github.com/JasperSnoek/spearmint&gt;</code>_ 
+Spearmint is a package to perform Bayesian optimization according to the
+algorithms outlined in the paper: Practical Bayesian Optimization of Machine
+Learning Algorithms Jasper Snoek, Hugo Larochelle and Ryan P. Adams Advances
+in Neural Information Processing Systems, 2012</p>
+</li>
+</ul>
+<h2 id="deep-learning">Deep Learning</h2>
+<ul>
+<li><p><code>Benchmarks &lt;https://github.com/soumith/convnet-benchmarks&gt;</code>_ - Comparison of different convolution network implementations.</p>
+</li>
+<li><p><code>Cafee &lt;http://arxiv.org/pdf/1409.3215v1.pdf&gt;</code>_ - Really active deep learning toolkit with support for cuDNN and lots of other backends. </p>
+</li>
+<li><p><code>cuDNN &lt;https://developer.nvidia.com/cudnn&gt;</code><em> - Deep neural network from Nvidia with paper <code>here &lt;http://arxiv.org/pdf/1410.0759.pdf&gt;</code></em>. <code>Torch 7 has support for cuDnn &lt;https://github.com/soumith/cudnn.torch&gt;</code><em> and <code>here &lt;https://github.com/hannes-brt/cudnn-python-wrappers&gt;</code></em> are some Python wrappers.</p>
+</li>
+<li><p><code>CURRENNT &lt;http://sourceforge.net/projects/currennt/&gt;</code><em> - Munich Open-Source CUDA RecurREnt Neural Network Toolkit described in this <code>paper &lt;http://www.mmk.ei.tum.de/publ/pdf/14/14wen7.pdf&gt;</code></em></p>
+</li>
+<li><p><code>gensim &lt;http://radimrehurek.com/gensim/index.html&gt;</code>_ - Python topic modeling toolkit with word2vec implementation. Extremly easy to use and to install.</p>
+</li>
+<li><p><code>Glove &lt;http://www.socher.org/index.php/Main/GloveGlobalVectorsForWordRepresentation&gt;</code>_ Global vectors for word representation.</p>
+</li>
+<li><p><code>GroundHog &lt;https://github.com/lisa-groundhog/GroundHog&gt;</code>_ Neural network based machine translation toolkit.</p>
+</li>
+<li><p><code>KALDI LSTM &lt;https://github.com/dophist/kaldi-lstm&gt;</code>_ C++ implementation of LSTM (Long Short Term Memory), in Kaldi&#39;s nnet1 framework. Used for automatic speech recognition, possibly language modeling etc.</p>
+</li>
+<li><p><code>OxLM: Oxford Neural Language Modelling Toolkit &lt;https://github.com/pauldb89/OxLM&gt;</code><em> Neural network toolkit for machine translation described in the paper <code>here &lt;https://ufal.mff.cuni.cz/pbml/102/art-baltescu-blunsom-hoang.pdf&gt;</code></em> </p>
+</li>
+<li><p><code>Neural Probabilistic Language Model Toolkit &lt;http://nlg.isi.edu/software/nplm/&gt;</code>_ &quot;NPLM is a toolkit for training and using feedforward neural language models (Bengio, 2003). It is fast even for large vocabularies (100k or more): a model can be trained on a billion words of data in about a week, and can be queried in about 40 μs, which is usable inside a decoder for machine translation.&quot;</p>
+</li>
+<li><p><code>RNNLM2WFST &lt;https://github.com/glecorve/rnnlm2wfst&gt;</code>_ Tool to convert RNNLMs to WFSTs</p>
+</li>
+<li><p><code>ViennaCL &lt;http://viennacl.sourceforge.net/&gt;</code> - ViennaCL is a free open-source linear algebra library for computations on many-core architectures (GPUs, MIC) and multi-core CPUs.</p>
+</li>
+</ul>
+<h2 id="natural-language-processing">Natural Language Processing</h2>
+<ul>
+<li><code>BLLIP reranking parser &lt;https://github.com/BLLIP/bllip-parser&gt;</code>_ &quot;BLLIP Parser is a statistical natural language parser including a generative constituent parser (first-stage) and discriminative maximum entropy reranker (second-stage).&quot;</li>
+<li><code>OpenNLP &lt;http://opennlp.apache.org/&gt;</code>_ The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</li>
+<li><code>SEAL &lt;https://github.com/TeamCohen/SEAL&gt;</code><em> Set expander for any language described in this <code>paper &lt;http://www.cs.cmu.edu/~wcohen/postscript/icdm-2007.pdf&gt;</code></em></li>
+<li><code>Stanford CoreNLP &lt;http://nlp.stanford.edu/software/corenlp.shtml&gt;</code>_ &quot;Stanford CoreNLP provides a set of natural language analysis tools written in Java&quot;</li>
+</ul>
+<h2 id="applications">Applications</h2>
+<ul>
+<li><code>Cloud ASR using PyKaldi &lt;https://github.com/UFAL-DSG/cloud-asr&gt;</code>_ &quot;CloudASR is a software platform and a public ASR webservice.&quot;</li>
+</ul>
+<h2 id="other-tools">Other Tools</h2>
+<ul>
+<li><code>GraphViz.sty &lt;https://github.com/mprentice/GraphViz-sty&gt;</code>_ 
+Really handy tool adding dot languge directly to a LaTex document, useful for
+tweaking the small colorized WFST figure in papers and presentations.</li>
+</ul>
+<h2 id="blogs">Blogs</h2>
+<ul>
+<li><code>Between One and Zero &lt;http://williamhartmann.wordpress.com/&gt;</code>_ by William Hartmann</li>
+<li><code>cmusphinx &lt;http://cmusphinx.sourceforge.net/&gt;</code>_  CMU Sphinx related blog </li>
+<li><code>Language Log &lt;http://languagelog.ldc.upenn.edu/nll/&gt;</code>_</li>
+<li><code>LingPipe Blog &lt;http://lingpipe-blog.com/&gt;</code>_ Natural Language Processing and Text Analytics</li>
+<li><code>Natural Language Processing Blog &lt;http://nlpers.blogspot.ch/&gt;</code>_ by Hal Daumé III</li>
+<li><code>Spoken Language Processing &lt;http://spokenlanguageprocessing.blogspot.jp/&gt;</code>_ &quot;Some thoughts on Spoken Language Processing, with tangents on Natural Language Processing, Machine Learning, and Signal Processing thrown in for good measure.&quot;</li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li><code>DEEP LEARNING: Methods and Applications &lt;http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf&gt;</code>_ By Li Deng and Dong Yu</li>
+<li><code>Foundations of Data Science &lt;http://www.cs.cornell.edu/jeh/NOSOLUTIONS90413.pdf&gt;</code>_ Draft by John Hopcroft and Ravindran Kannan</li>
+<li><code>Introduction to Matrix Methods and Applications &lt;http://stanford.edu/class/ee103/mma.pdf&gt;</code>_ (Working Title) S. Boyd and L. Vandenberghe</li>
+</ul>
+
+	  	</article>
+		</div>
+		<div class="col-md-3">
+			<div id="sidebar">	
+				<div class="toc"></div>
+			</div>			
+		</div>		
+  </div>
+ 
+      <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
+    </div>
+    <script src="/assets/application-48a0c36ddfab25a0c51837d6726354a7.js"></script>
+  </body>
+</html>

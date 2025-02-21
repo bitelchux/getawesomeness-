@@ -1,0 +1,668 @@
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ColdFusion | getAwesomeness()</title>
+    <meta name="keywords" content="awesome,awesomeness,getAwesomeness">
+    <meta name="description" content="Use getAwesomeness() to retrieve all amazing awesomeness from Github.">
+    
+      
+      <link rel="stylesheet" href="/assets/styles-36a7a3c2f617e9a498a4613e48f641bd.css" />
+    
+  </head>
+
+  
+  <!--[if lt IE 9]>
+    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+  <![endif]-->
+
+  <body>
+  	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">getAwesomeness</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+                    
+            <li class=""><a href="/get/net">.Net</a></li>           
+                    
+            <li class=""><a href="/get/python">Python</a></li>           
+                    
+            <li class=""><a href="/get/ruby">Ruby</a></li>           
+                    
+            <li class=""><a href="/get/swift">Swift</a></li>           
+                    
+            <li class=""><a href="/get/autohotkey">AutoHotkey</a></li>           
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <iframe src="http://ghbtns.com/github-btn.html?user=panzhangwang&amp;repo=getawesomeness&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="45" style="padding: 15px 0 0 15px;"></iframe>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" id="typeahead" class="form-control" placeholder="Search List">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  	<div class="container">
+  		
+  		<div class="messages">
+        
+
+
+
+
+
+
+
+      </div>
+    		
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">			  
+				
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="general">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_general" aria-expanded="true" aria-controls="_general">
+				          General
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_general" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="general">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/c">C</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cpp">C/C++</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/d">D</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/delphi">Delphi</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/fortran">Fortran</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/go">Go</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/rust">Rust</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/net">.Net</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/python">Python</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ruby">Ruby</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/swift">Swift</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="scripting">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_scripting" aria-expanded="true" aria-controls="_scripting">
+				          Scripting
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_scripting" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="scripting">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/autohotkey">AutoHotkey</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/coldfusion">ColdFusion</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/groovy">Groovy</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/js">JavaScript</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/shell">Shell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/lua">Lua</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web.framework">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web.framework" aria-expanded="true" aria-controls="_web.framework">
+				          Web Framework
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web.framework" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web.framework">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/cakephp">CakePHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/laravel">Laravel</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/symfony">Symfony</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="jvm">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_jvm" aria-expanded="true" aria-controls="_jvm">
+				          JVM
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_jvm" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="jvm">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/java">Java</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/scala">Scala</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="domain.specific">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_domain.specific" aria-expanded="true" aria-controls="_domain.specific">
+				          Domain Specific
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_domain.specific" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="domain.specific">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/r">R</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="functional">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_functional" aria-expanded="true" aria-controls="_functional">
+				          Functional
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_functional" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="functional">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/elixir">Elixir</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ocaml">OCaml</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/haskell">Haskell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang">Erlang</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang_bm">Erlang Bookmarks</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web" aria-expanded="true" aria-controls="_web">
+				          Web
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/angularjs">AngularJS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/backbone">Backbone</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dojo">Dojo</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/jquery">jQuery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/knockout">Knockout</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nodejs">Node</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/react">React</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/webcomponents">Web Components</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="mobile">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_mobile" aria-expanded="true" aria-controls="_mobile">
+				          Mobile
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_mobile" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="mobile">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/android">Android</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/apple">Apple</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ios">iOS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cordova">Cordova</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="frontend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_frontend" aria-expanded="true" aria-controls="_frontend">
+				          Frontend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_frontend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="frontend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docs">Documentation</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/svg">SVG</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/images">Images</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/front_dev">Frontend Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/h5">HTML5</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="backend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_backend" aria-expanded="true" aria-controls="_backend">
+				          Backend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_backend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="backend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docker">Docker</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/gamedev">Game Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openresty">OpenResty</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/servicesengineering">Services Engineering</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/sysadmin">Sysadmin</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="danymic">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_danymic" aria-expanded="true" aria-controls="_danymic">
+				          Danymic
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_danymic" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="danymic">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/julia">Julia</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="editors">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_editors" aria-expanded="true" aria-controls="_editors">
+				          Editors
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_editors" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="editors">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/sublime">Sublime Text</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vim">Vim</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="self.education">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_self.education" aria-expanded="true" aria-controls="_self.education">
+				          Self Education
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_self.education" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="self.education">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/algorithm">Algorithm</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/conferences">Conferences</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/testbook">Testing Books</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/koans">Koans</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openscience">Open Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/papers">Papers</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/talks">Talks</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/weekly">Weekly Newsletters</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="data">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_data" aria-expanded="true" aria-controls="_data">
+				          Data
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_data" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="data">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/analytics">Analytics</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/db">Database</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/datascience">Data Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dataset">Dataset</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ml">Machine Learning</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/hadoop">Hadoop</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="dev.tools">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_dev.tools" aria-expanded="true" aria-controls="_dev.tools">
+				          Dev Tools
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_dev.tools" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="dev.tools">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/tools">Tools of The Trade</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dotfiles">Dotfiles</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/devenv">Dev Env</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="platforms">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_platforms" aria-expanded="true" aria-controls="_platforms">
+				          Platforms
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_platforms" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="platforms">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/osx">OS X</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="others">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_others" aria-expanded="true" aria-controls="_others">
+				          Others
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_others" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="others">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/ccm">Creative Commons Media</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ciandcd">Continuous Delivery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/community">Community</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/styleguide">Styleguides</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nlp">Natural Language Processing</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vagrant">Vagrant</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/wpo">Web Performance Optimization</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+      </div>
+		</div>
+		<div class="col-md-7">
+			<a href="https://github.com/seancoyne/awesome-coldfusion" class="btn btn-primary pull-right" target="_blank">View on Github</a>	
+			<article class="markdown-body">
+	  		<h1 id="awesome-coldfusion-awesome-https-cdn-rawgit-com-sindresorhus-awesome-d7305f38d29fed78fa85652e3a63e154dd8e8829-media-badge-svg-https-github-com-sindresorhus-awesome-">Awesome ColdFusion <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a></h1>
+<p>A curated list of awesome ColdFusion frameworks, libraries and software. Inspired by <a href="https://github.com/sorrycc/awesome-javascript">awesome-javascript</a>.</p>
+<p>Pull requests very welcome.</p>
+<ul>
+<li><a href="https://github.com/seancoyne/awesome-coldfusion">Awesome ColdFusion</a><ul>
+<li><a href="#engines">Engines</a></li>
+<li><a href="#application-frameworks">Application Frameworks</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#cms">Content Management Systems</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#other-libraries">Other Libraries</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="engines">Engines</h2>
+<ul>
+<li><a href="http://www.adobe.com/products/coldfusion-family.html">Adobe ColdFusion</a></li>
+<li><a href="http://lucee.org/">Lucee</a> - Free, Open Source CFML Engine</li>
+</ul>
+<h2 id="application-frameworks">Application Frameworks</h2>
+<ul>
+<li><a href="https://cfwheels.org">CFWheels</a> - An open source CFML framework inspired by Ruby on Rails.</li>
+<li><a href="http://www.coldbox.org">ColdBox</a> - The Enterprise ColdFusion MVC Development Platform</li>
+<li><a href="http://www.farcrycore.org">FarCry</a> - FarCry Core is a web application framework that helps CFML developers build tailor-made content solutions, fast.</li>
+<li><a href="https://github.com/framework-one/fw1">FW/1 - Framework One</a> - a lightweight, convention over configuration, MVC application framework</li>
+</ul>
+<h2 id="testing">Testing</h2>
+<ul>
+<li><a href="https://github.com/teamcfadvance/CFSelenium">CFSelenium</a> - A native Selenium RC binding for ColdFusion</li>
+<li><a href="https://testbox.ortusbooks.com/mocking/mockbox">MockBox</a> - The ColdFusion Mocking/Stubbing Framework</li>
+<li><a href="https://github.com/mxunit/mxunit">MXUnit</a> - xUnit style unit testing framework</li>
+<li><a href="https://github.com/atuttle/mxunit-watch">mxunit-watch</a> - watch a directory for file changes (.cfc, .cfm, .xml) to trigger mxunit test suite full run, displaying results in the console</li>
+<li><a href="https://github.com/Ortus-Solutions/TestBox">TestBox</a> - BDD style unit testing framework</li>
+</ul>
+<h2 id="dependency-injection">Dependency Injection</h2>
+<ul>
+<li><a href="https://github.com/coldspringframework/coldspring1">ColdSpring</a> - ColdSpring makes the configuration and dependencies of your CFCs easier to manage. ColdSpring brings the power of the popular Spring framework for Java to ColdFusion.</li>
+<li><a href="https://github.com/framework-one/di1">DI/1 - Inject One</a> - a very lightweight, convention over configuration, dependency injection (inversion of control) framework</li>
+<li><a href="https://wirebox.ortusbooks.com/">Wirebox</a> - The Enterprise Dependency Injection Framework</li>
+</ul>
+<h2 id="cms">CMS</h2>
+<ul>
+<li><a href="http://www.contens.com/">CONTENS CMS</a> - Professional Content Management</li>
+<li><a href="https://github.com/Ortus-Solutions/ContentBox">ContentBox</a> - A powerful modular content management engine</li>
+<li><a href="https://github.com/farcrycore/plugin-farcrycms">FarCry CMS</a></li>
+<li><a href="https://www.murasoftware.com/">Mura</a></li>
+<li><a href="https://github.com/pixl8/Preside-CMS">Preside CMS</a> - an open source CMS for the Railo language</li>
+<li><a href="https://www.slatwallcommerce.com/">Slatwall</a> - An Open Source Commerce Platform</li>
+</ul>
+<h2 id="nosql">NoSQL</h2>
+<ul>
+<li><a href="https://github.com/dajester2013/CFArango">CFArango</a> - ArangoDB client for ColdFusion</li>
+<li><a href="https://github.com/Ortus-Solutions/cfcouchbase-sdk">CFCouchbase</a> - Couchbase NoSQL and caching client wrapper for ColdFusion</li>
+<li><a href="https://github.com/marcesher/cfmongodb">cfmongodb</a> - MongoDB client wrapper for ColdFusion</li>
+</ul>
+<h2 id="rest">REST</h2>
+<ul>
+<li><a href="https://coldbox.ortusbooks.com/digging-deeper/recipes/building-rest-apis">ColdBox REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="https://github.com/framework-one/fw1/wiki/Developing-Applications-Manual#controllers-for-rest-apis">FW/1 REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="http://taffy.io">Taffy</a> - The REST Web Service framework for ColdFusion and Railo</li>
+<li><a href="https://guides.cfwheels.org/docs/routing">CFWheels RESTful</a> - CFWheels encourages a conventional RESTful and resourceful style of request handling.</li>
+</ul>
+<h2 id="other-libraries">Other Libraries</h2>
+<ul>
+<li><a href="https://cachebox.ortusbooks.com/">CacheBox</a> - The Enterprise ColdFusion Caching Engine, Aggregator and API</li>
+<li><a href="https://github.com/misterdai/cfbackport">cfbackport</a> - Back porting features contained in newer versions of ColdFusion.</li>
+<li><a href="https://github.com/ghidinelli/cfpayment">cfpayment</a> - ColdFusion payment processing library makes plumbing e-commerce apps easy. Charging credit cards has never been easier. Inspired by Ruby&#39;s ActiveMerchant.</li>
+<li><a href="https://github.com/oarevalo/BugLogHQ">BugLogHQ</a> - Exception Tracking</li>
+<li><a href="https://github.com/markmandel/JavaLoader">JavaLoader</a> - JavaLoader is a library that has been built to ease the use, development and integration of Java within ColdFusion applications.</li>
+<li><a href="https://logbox.ortusbooks.com/">LogBox</a> - The Enterprise ColdFusion Logging Library</li>
+<li><a href="https://github.com/AlumnIQ/momentcfc">Moment.cfc</a> - Moment.js inspired date/time manipulation library for CFML (not a direct port)</li>
+<li><a href="https://github.com/rip747/Mustache.cfc">Mustache.cfc</a> - <a href="http://mustache.github.io">{{ mustache }}</a> for ColdFusion</li>
+<li><a href="https://github.com/russplaysguitar/UnderscoreCF">UnderscoreCF</a> - An UnderscoreJS port for Coldfusion. Functional programming library.</li>
+</ul>
+<h2 id="editors">Editors</h2>
+<ul>
+<li><a href="https://github.com/jcberquist/sublimetext-cfml">CFML Package for Sublime Text 3</a> - CFML syntax highlighting as well as function and tag completions for <a href="http://www.sublimetext.com">Sublime Text 3</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=KamasamaK.vscode-cfml">CFML Extension for Visual Studio Code</a> - CFML Language extension for <a href="https://code.visualstudio.com/">VSCode</a></li>
+<li><a href="https://github.com/atuttle/atom-language-cfml">CFML Language for Atom</a> - CFML Language plugin for <a href="https://atom.io/">Atom</a></li>
+<li><a href="http://www.adobe.com/products/coldfusion-builder.html">Adobe ColdFusion Builder 3</a> - Eclipse based ColdFusion IDE from Adobe</li>
+<li><a href="http://www.jetbrains.com/idea/">IntelliJ Idea</a> - Java IDE, CFML Support available via <a href="https://github.com/JetBrains/intellij-plugins/tree/master/CFML">plugin</a></li>
+<li><a href="http://cfbrackets.org">cfbrackets</a> - adds support for ColdFusion Markup Language (CFML) to <a href="http://brackets.io/">Brackets Code Editor</a></li>
+<li><a href="http://cfeclipse.org">CFEclipse</a> - CFML Plugin for <a href="http://www.eclipse.org/">Eclipse</a></li>
+<li><a href="https://github.com/textmate/coldfusion.tmbundle">TextMate</a> - <a href="http://macromates.com">TextMate</a> support for ColdFusion</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<ul>
+<li><a href="https://www.ortussolutions.com/products/commandbox">CommandBox</a> - ColdFusion (CFML) CLI, Package Manager, REPL and more</li>
+<li><a href="http://www.uu-2.info/">Unofficial Updater</a> - A utility that helps install ColdFusion hotfixes</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://carehart.org/cf411/">CF411</a> - CF411: 1,800+ Tools and Resources for CFers, (in over 150 categories) by Charlie Arehart</li>
+<li><a href="http://cflib.org/">CFLib</a> - Common Function Library Project</li>
+<li><a href="https://github.com/nodoherty/ColdFusion-Koans">ColdFusion Koans</a> - The ColdFusion Koans are a set of unit tests that the user must make pass by filling in values</li>
+<li><a href="https://github.com/cfjedimaster/ColdFusion-UI-the-Right-Way">ColdFusion UI the Right Way</a> - A list of articles demonstrating how to do UI with ColdFusion on the back end.</li>
+<li><a href="http://www.learncfinaweek.com">Learn CF in a Week</a> - community driven training program that teaches all the basics you need to be a ColdFusion Developer in one week.</li>
+<li><a href="http://trycf.com/">Try ColdFusion</a> - Realtime interactive learning tool for CFML</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://www.cfmlrepo.com/">CFRepo</a> - A repository of ColdFusion installers created by Gavin Pickin</li>
+<li><a href="https://github.com/mikesprague/lucee5-heroku">lucee5-heroku</a> - Application template for deploying Lucee 5 apps to Heroku by Mike Sprague</li>
+<li><a href="https://github.com/mikesprague/vagrant-lemtl">Vagrant LEMTL</a> - Vagrant box with Linux, Nginx, MariaDB (or MySQL), Tomcat, and Lucee for local development with CFML by Mike Sprague</li>
+<li>ACF Docker Images on <a href="https://gallery.ecr.aws/adobe/coldfusion">Amazon ECR</a> and <a href="https://hub.docker.com/u/adobecoldfusion">Docker Hub</a> - Official Docker images from Adobe</li>
+<li>Lucee Docker Images <a href="https://hub.docker.com/u/lucee">Docker Hub</a> - Official Docker images from Lucee</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://helpx.adobe.com/coldfusion/home.html">Adobe ColdFusion Documentation</a> - The Official Adobe ColdFusion docs</li>
+<li><a href="http://cfdocs.org/">CFDocs</a> - UltraFast CFML Documentation Reference.</li>
+<li><a href="https://github.com/cfchef/cfml-tag-to-script-conversions">CFML Tags to CFScript Reference</a> -  CFML Tag to Script Conversions by Tony Junkes</li>
+<li><a href="https://github.com/daccfml/cfscript/blob/master/cfscript.md">CFScript Reference</a> -  CFScript Documentation by Adam Cameron</li>
+<li><a href="https://bitbucket.org/lucee/lucee/wiki/Home">Lucee Wiki</a> - Official Lucee Documentation</li>
+<li><a href="http://docs.lucee.org/">Official Lucee Server Documentation</a> - New Lucee Documentation</li>
+<li><a href="https://github.com/getrailo/railo/wiki">Railo Documentation</a> - Official Railo docs</li>
+</ul>
+<h2 id="license">License</h2>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0"></a></p>
+<p>To the extent possible under law, <a href="https://github.com/seancoyne/awesome-coldfusion">Sean Coyne</a> has waived all copyright and related or neighboring rights to this work.</p>
+
+	  	</article>
+		</div>
+		<div class="col-md-3">
+			<div id="sidebar">	
+				<div class="toc"></div>
+			</div>			
+		</div>		
+  </div>
+ 
+      <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
+    </div>
+    <script src="/assets/application-48a0c36ddfab25a0c51837d6726354a7.js"></script>
+  </body>
+</html>

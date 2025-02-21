@@ -1,0 +1,619 @@
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Database | getAwesomeness()</title>
+    <meta name="keywords" content="awesome,awesomeness,getAwesomeness">
+    <meta name="description" content="Use getAwesomeness() to retrieve all amazing awesomeness from Github.">
+    
+      
+      <link rel="stylesheet" href="/assets/styles-36a7a3c2f617e9a498a4613e48f641bd.css" />
+    
+  </head>
+
+  
+  <!--[if lt IE 9]>
+    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+  <![endif]-->
+
+  <body>
+  	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">getAwesomeness</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+                    
+            <li class=""><a href="/get/openscience">Open Science</a></li>           
+                    
+            <li class=""><a href="/get/papers">Papers</a></li>           
+                    
+            <li class=""><a href="/get/talks">Talks</a></li>           
+                    
+            <li class=""><a href="/get/weekly">Weekly Newsletters</a></li>           
+                    
+            <li class=""><a href="/get/analytics">Analytics</a></li>           
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <iframe src="http://ghbtns.com/github-btn.html?user=panzhangwang&amp;repo=getawesomeness&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="45" style="padding: 15px 0 0 15px;"></iframe>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" id="typeahead" class="form-control" placeholder="Search List">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  	<div class="container">
+  		
+  		<div class="messages">
+        
+
+
+
+
+
+
+
+      </div>
+    		
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">			  
+				
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="general">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_general" aria-expanded="true" aria-controls="_general">
+				          General
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_general" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="general">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/c">C</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cpp">C/C++</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/d">D</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/delphi">Delphi</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/fortran">Fortran</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/go">Go</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/rust">Rust</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/net">.Net</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/python">Python</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ruby">Ruby</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/swift">Swift</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="scripting">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_scripting" aria-expanded="true" aria-controls="_scripting">
+				          Scripting
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_scripting" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="scripting">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/autohotkey">AutoHotkey</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/coldfusion">ColdFusion</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/groovy">Groovy</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/js">JavaScript</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/shell">Shell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/lua">Lua</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web.framework">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web.framework" aria-expanded="true" aria-controls="_web.framework">
+				          Web Framework
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web.framework" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web.framework">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/cakephp">CakePHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/laravel">Laravel</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/symfony">Symfony</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="jvm">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_jvm" aria-expanded="true" aria-controls="_jvm">
+				          JVM
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_jvm" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="jvm">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/java">Java</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/scala">Scala</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="domain.specific">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_domain.specific" aria-expanded="true" aria-controls="_domain.specific">
+				          Domain Specific
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_domain.specific" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="domain.specific">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/r">R</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="functional">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_functional" aria-expanded="true" aria-controls="_functional">
+				          Functional
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_functional" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="functional">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/elixir">Elixir</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ocaml">OCaml</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/haskell">Haskell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang">Erlang</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang_bm">Erlang Bookmarks</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web" aria-expanded="true" aria-controls="_web">
+				          Web
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/angularjs">AngularJS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/backbone">Backbone</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dojo">Dojo</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/jquery">jQuery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/knockout">Knockout</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nodejs">Node</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/react">React</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/webcomponents">Web Components</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="mobile">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_mobile" aria-expanded="true" aria-controls="_mobile">
+				          Mobile
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_mobile" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="mobile">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/android">Android</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/apple">Apple</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ios">iOS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cordova">Cordova</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="frontend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_frontend" aria-expanded="true" aria-controls="_frontend">
+				          Frontend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_frontend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="frontend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docs">Documentation</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/svg">SVG</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/images">Images</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/front_dev">Frontend Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/h5">HTML5</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="backend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_backend" aria-expanded="true" aria-controls="_backend">
+				          Backend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_backend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="backend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docker">Docker</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/gamedev">Game Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openresty">OpenResty</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/servicesengineering">Services Engineering</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/sysadmin">Sysadmin</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="danymic">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_danymic" aria-expanded="true" aria-controls="_danymic">
+				          Danymic
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_danymic" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="danymic">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/julia">Julia</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="editors">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_editors" aria-expanded="true" aria-controls="_editors">
+				          Editors
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_editors" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="editors">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/sublime">Sublime Text</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vim">Vim</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="self.education">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_self.education" aria-expanded="true" aria-controls="_self.education">
+				          Self Education
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_self.education" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="self.education">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/algorithm">Algorithm</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/conferences">Conferences</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/testbook">Testing Books</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/koans">Koans</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openscience">Open Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/papers">Papers</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/talks">Talks</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/weekly">Weekly Newsletters</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="data">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_data" aria-expanded="true" aria-controls="_data">
+				          Data
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_data" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="data">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/analytics">Analytics</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/db">Database</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/datascience">Data Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dataset">Dataset</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ml">Machine Learning</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/hadoop">Hadoop</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="dev.tools">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_dev.tools" aria-expanded="true" aria-controls="_dev.tools">
+				          Dev Tools
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_dev.tools" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="dev.tools">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/tools">Tools of The Trade</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dotfiles">Dotfiles</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/devenv">Dev Env</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="platforms">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_platforms" aria-expanded="true" aria-controls="_platforms">
+				          Platforms
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_platforms" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="platforms">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/osx">OS X</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="others">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_others" aria-expanded="true" aria-controls="_others">
+				          Others
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_others" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="others">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/ccm">Creative Commons Media</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ciandcd">Continuous Delivery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/community">Community</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/styleguide">Styleguides</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nlp">Natural Language Processing</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vagrant">Vagrant</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/wpo">Web Performance Optimization</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+      </div>
+		</div>
+		<div class="col-md-7">
+			<a href="https://github.com/numetriclabz/awesome-db" class="btn btn-primary pull-right" target="_blank">View on Github</a>	
+			<article class="markdown-body">
+	  		<h1 id="-awesome-db-awesome-https-cdn-rawgit-com-sindresorhus-awesome-d7305f38d29fed78fa85652e3a63e154dd8e8829-media-badge-svg-https-github-com-sindresorhus-awesome-">﻿awesome - db <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a></h1>
+<p>A curated list of amazingly awesome database libraries, resources and shiny things by <a href="https://www.numetriclabz.com/">Numetric Technologies</a></p>
+<h2 id="clojure">Clojure</h2>
+<ul>
+<li><a href="http://www.datomic.com/">Datomic</a></li>
+<li><a href="https://github.com/niwibe/clojure.jdbc">clojure.jdbc</a></li>
+<li><a href="https://github.com/robashton/cravendb">cravendb</a></li>
+</ul>
+<h2 id="c-cpp">C / CPP</h2>
+<ul>
+<li><a href="https://github.com/aerospike/aerospike-server">Aerospike</a> - Aerospike Database Server – flash-optimized, in-memory, nosql database</li>
+<li><a href="https://github.com/JakSprats/Alchemy-Database">Alchemy-Database</a> - AlchemyDB is now Aerospike</li>
+<li><a href="https://github.com/citusdata/cstore_fdw">cstore_fdw</a> - Fast columnar store for analytics with PostgreSQL <a href="http://citusdata.github.io/cstore_fdw/">website</a></li>
+<li><a href="http://symas.com/mdb/">LMDB</a> - Very fast embedded key/value store with full ACID semantics.</li>
+<li><a href="https://github.com/memcached/memcached">memcache</a> - Free &amp; open source, high-performance, distributed memory object caching system</li>
+<li><a href="https://github.com/snaga/monetdb">monetdb</a> - <a href="https://www.monetdb.org/">website</a></li>
+<li><a href="https://github.com/mongodb/mongo">mongo</a> - The Mongo Database <a href="http://www.mongodb.org/">http://www.mongodb.org/</a></li>
+<li><a href="https://github.com/facebook/mysql-5.6">facebook/mysql-5.6</a> - Facebook&#39;s branch of the Oracle MySQL v5.6 database</li>
+<li><a href="https://github.com/twitter/mysql">twitter/mysql</a> - MySQL fork maintained and used at Twitter <a href="https://github.com/twitter/mysql/wiki">https://github.com/twitter/mysql/wiki</a></li>
+<li><a href="https://github.com/postgres/postgres">postgres</a></li>
+<li><a href="https://github.com/antirez/redis">Redis</a> - Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes <a href="http://redis.io">website</a></li>
+<li><a href="https://github.com/mpalmer/redis/tree/nds-2.6">redis-nds</a> - This is a version of Redis patched to implement NDS (the Naive Disk Store). Documentation on this feature is contained within README.nds.</li>
+<li><a href="https://github.com/rethinkdb/rethinkdb">rethinkdb</a> - An open-source distributed JSON document database with a pleasant and powerful query language. <a href="http://www.rethinkdb.com">http://www.rethinkdb.com</a></li>
+<li><a href="https://github.com/facebook/rocksdb">rocksdb</a> - Embedded key-value store for fast storage <a href="http://rocksdb.org">http://rocksdb.org</a></li>
+<li><a href="https://github.com/ideawu/ssdb">ssdb</a> - SSDB - A fast NoSQL database, an alternative to Redis <a href="http://ssdb.io">http://ssdb.io</a></li>
+<li><a href="http://www.sqlite.org/">SQLite</a> - A completely embedded, full-featured relational database in a few 100k that you can include right into your project.</li>
+<li><a href="https://github.com/Tokutek/tokudb-engine">tokudb-engine</a>- TokuDB is a high-performance, write optimized, compressing, transactional storage engine for MySQL and MariaDB</li>
+<li><a href="https://github.com/Tokutek/mongo">TokuMX</a>- TokuMX is a high-performance, concurrent, compressing, drop-in replacement engine for MongoDB</li>
+<li><a href="https://github.com/VoltDB/voltdb/">VoltDB</a> - VoltDB is a horizontally-scalable, in-memory SQL RDBMS designed for applications that have extremely high read and write throughput requirements.</li>
+</ul>
+<h2 id="dot-net">dot-net</h2>
+<ul>
+<li><a href="https://github.com/ravendb/ravendb">RavenDB</a> - A linq enabled document database for .NET <a href="http://ayende.com/Blog/">http://ayende.com/Blog/</a></li>
+<li><a href="http://dev.origodb.com">OrigoDB</a> - An in-memory embedded database engine for NET/Mono</li>
+</ul>
+<h2 id="erlang">Erlang</h2>
+<ul>
+<li><a href="https://github.com/basho/riak">riak</a> - Riak is a decentralized datastore from Basho Technologies.</li>
+<li><a href="http://pulsedb.io">Pulsedb</a> - Pulsedb is a time series database server and library.</li>
+</ul>
+<h2 id="go-lang">Go-lang</h2>
+<ul>
+<li><a href="https://github.com/boltdb/bolt">bolt</a> - A low-level key/value database for Go.</li>
+<li><a href="https://github.com/peterbourgon/diskv">diskv</a> - A home-grown disk-backed key-value store.</li>
+<li><a href="https://github.com/pmylund/go-cache">go-cache</a> - An in-memory key:value store/cache (similar to Memcached) library for Go, suitable for single-machine applications.</li>
+<li><a href="https://github.com/syndtr/goleveldb">goleveldb</a> - An implementation of the <a href="https://code.google.com/p/leveldb/">LevelDB</a> key/value database in the Go.</li>
+<li><a href="https://github.com/golang/groupcache">groupcache</a> - Groupcache is a caching and cache-filling library, intended as a replacement for memcached in many cases.</li>
+<li><a href="https://github.com/influxdb/influxdb">influxdb</a> - Scalable datastore for metrics, events, and real-time analytics</li>
+<li><a href="https://github.com/siddontang/ledisdb">ledisdb</a> - Ledisdb is a high performance NoSQL like Redis based on LevelDB.</li>
+<li><a href="https://github.com/soundcloud/roshi/">roshi</a> - Roshi is a large-scale CRDT set implementation for timestamped events.</li>
+<li><a href="https://github.com/skydb/sky">skydb.io</a> - Sky is an open source database used for flexible, high performance analysis of behavioral data.</li>
+<li><a href="https://github.com/HouzuoGuo/tiedot">tiedot</a> - Your NoSQL database powered by Golang.</li>
+</ul>
+<h2 id="java">JAVA</h2>
+<ul>
+<li><a href="https://github.com/apache/cassandra">cassandra</a> - Cassandra is a partitioned row store. Rows are organized into tables with a required primary key.</li>
+<li><a href="https://github.com/elasticsearch/elasticsearch">elasticsearch</a> - Open Source, Distributed, RESTful Search Engine <a href="http://elasticsearch.org">website</a></li>
+<li><a href="https://github.com/deephacks/lmdbjni">lmdbjni</a> - LMDB for Java, which is a very fast embedded key/value store with full ACID semantics.</li>
+<li><a href="https://github.com/jankotek/MapDB">mapdb</a> - MapDB provides concurrent Maps, Sets and Queues backed by disk storage or off-heap-memory. It is a fast and easy to use embedded Java database engine.<a href="http://www.mapdb.org">http://www.mapdb.org</a></li>
+<li><a href="https://github.com/neo4j/neo4j">neo4j</a> - <a href="http://neo4j.org">Neo4j</a> is the world’s leading Graph Database.</li>
+<li><a href="https://github.com/orientechnologies/orientdb">orientdb</a> - OrientDB is an Open Source NoSQL DBMS with the features of both Document and Graph DBMSs.</li>
+<li><a href="https://github.com/voldemort/voldemort">voldemort</a> - An open source clone of Amazon&#39;s Dynamo. <a href="http://project-voldemort.com">website</a></li>
+</ul>
+<ul>
+<li><a href="https://github.com/thinkaurelius/titan">Titan</a> - Distributed Graph Database <a href="http://titandb.io">http://titandb.io</a></li>
+</ul>
+<h2 id="javascript">Javascript</h2>
+<ul>
+<li><a href="https://github.com/apache/couchdb">couchdb</a> - Apache CouchDB™ is a database that uses JSON for documents,JavaScript for MapReduce indexes, and regular HTTP for its API [website] (<a href="http://couchdb.apache.org/">http://couchdb.apache.org/</a>)</li>
+<li><a href="https://github.com/mongodb/mongo">mongodb</a> - MongoDB is a document database that provides high performance, high availability, and easy scalability. Documents (objects) map nicely to programming language data types. Embedded documents and arrays reduce need for joins. Dynamic schema makes polymorphism easier. [website] (<a href="https://www.mongodb.org/">https://www.mongodb.org/</a>)</li>
+</ul>
+<h2 id="scala">Scala</h2>
+<ul>
+<li><a href="https://github.com/sameeragarwal/blinkdb">BlinkDB</a> - BlinkDB: Sub-Second Approximate Queries on Very Large Data [website]    (<a href="http://blinkdb.cs.berkeley.edu/">http://blinkdb.cs.berkeley.edu/</a>)</li>
+</ul>
+<h2 id="research-papers">Research Papers</h2>
+<ul>
+<li><a href="https://github.com/rxin/db-readings">db-readings</a> - A list of papers essential to understanding databases and building new data systems</li>
+</ul>
+
+	  	</article>
+		</div>
+		<div class="col-md-3">
+			<div id="sidebar">	
+				<div class="toc"></div>
+			</div>			
+		</div>		
+  </div>
+ 
+      <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
+    </div>
+    <script src="/assets/application-48a0c36ddfab25a0c51837d6726354a7.js"></script>
+  </body>
+</html>

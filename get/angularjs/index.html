@@ -1,0 +1,788 @@
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AngularJS | getAwesomeness()</title>
+    <meta name="keywords" content="awesome,awesomeness,getAwesomeness">
+    <meta name="description" content="Use getAwesomeness() to retrieve all amazing awesomeness from Github.">
+    
+      
+      <link rel="stylesheet" href="/assets/styles-36a7a3c2f617e9a498a4613e48f641bd.css" />
+    
+  </head>
+
+  
+  <!--[if lt IE 9]>
+    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+  <![endif]-->
+
+  <body>
+  	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">getAwesomeness</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+                    
+            <li class=""><a href="/get/laravel">Laravel</a></li>           
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <iframe src="http://ghbtns.com/github-btn.html?user=panzhangwang&amp;repo=getawesomeness&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="45" style="padding: 15px 0 0 15px;"></iframe>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" id="typeahead" class="form-control" placeholder="Search List">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  	<div class="container">
+  		
+  		<div class="messages">
+        
+
+
+
+
+
+
+
+      </div>
+    		
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">			  
+				
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="general">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_general" aria-expanded="true" aria-controls="_general">
+				          General
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_general" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="general">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/c">C</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cpp">C/C++</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/d">D</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/delphi">Delphi</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/fortran">Fortran</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/go">Go</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/rust">Rust</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/net">.Net</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/python">Python</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ruby">Ruby</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/swift">Swift</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="scripting">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_scripting" aria-expanded="true" aria-controls="_scripting">
+				          Scripting
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_scripting" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="scripting">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/autohotkey">AutoHotkey</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/coldfusion">ColdFusion</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/groovy">Groovy</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/js">JavaScript</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/shell">Shell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/lua">Lua</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web.framework">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web.framework" aria-expanded="true" aria-controls="_web.framework">
+				          Web Framework
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web.framework" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web.framework">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/cakephp">CakePHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/laravel">Laravel</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/symfony">Symfony</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="jvm">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_jvm" aria-expanded="true" aria-controls="_jvm">
+				          JVM
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_jvm" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="jvm">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/java">Java</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/scala">Scala</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="domain.specific">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_domain.specific" aria-expanded="true" aria-controls="_domain.specific">
+				          Domain Specific
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_domain.specific" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="domain.specific">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/r">R</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="functional">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_functional" aria-expanded="true" aria-controls="_functional">
+				          Functional
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_functional" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="functional">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/elixir">Elixir</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ocaml">OCaml</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/haskell">Haskell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang">Erlang</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang_bm">Erlang Bookmarks</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web" aria-expanded="true" aria-controls="_web">
+				          Web
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/angularjs">AngularJS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/backbone">Backbone</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dojo">Dojo</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/jquery">jQuery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/knockout">Knockout</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nodejs">Node</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/react">React</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/webcomponents">Web Components</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="mobile">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_mobile" aria-expanded="true" aria-controls="_mobile">
+				          Mobile
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_mobile" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="mobile">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/android">Android</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/apple">Apple</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ios">iOS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cordova">Cordova</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="frontend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_frontend" aria-expanded="true" aria-controls="_frontend">
+				          Frontend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_frontend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="frontend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docs">Documentation</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/svg">SVG</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/images">Images</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/front_dev">Frontend Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/h5">HTML5</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="backend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_backend" aria-expanded="true" aria-controls="_backend">
+				          Backend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_backend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="backend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docker">Docker</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/gamedev">Game Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openresty">OpenResty</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/servicesengineering">Services Engineering</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/sysadmin">Sysadmin</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="danymic">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_danymic" aria-expanded="true" aria-controls="_danymic">
+				          Danymic
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_danymic" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="danymic">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/julia">Julia</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="editors">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_editors" aria-expanded="true" aria-controls="_editors">
+				          Editors
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_editors" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="editors">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/sublime">Sublime Text</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vim">Vim</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="self.education">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_self.education" aria-expanded="true" aria-controls="_self.education">
+				          Self Education
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_self.education" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="self.education">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/algorithm">Algorithm</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/conferences">Conferences</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/testbook">Testing Books</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/koans">Koans</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openscience">Open Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/papers">Papers</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/talks">Talks</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/weekly">Weekly Newsletters</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="data">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_data" aria-expanded="true" aria-controls="_data">
+				          Data
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_data" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="data">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/analytics">Analytics</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/db">Database</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/datascience">Data Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dataset">Dataset</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ml">Machine Learning</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/hadoop">Hadoop</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="dev.tools">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_dev.tools" aria-expanded="true" aria-controls="_dev.tools">
+				          Dev Tools
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_dev.tools" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="dev.tools">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/tools">Tools of The Trade</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dotfiles">Dotfiles</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/devenv">Dev Env</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="platforms">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_platforms" aria-expanded="true" aria-controls="_platforms">
+				          Platforms
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_platforms" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="platforms">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/osx">OS X</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="others">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_others" aria-expanded="true" aria-controls="_others">
+				          Others
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_others" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="others">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/ccm">Creative Commons Media</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ciandcd">Continuous Delivery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/community">Community</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/styleguide">Styleguides</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nlp">Natural Language Processing</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vagrant">Vagrant</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/wpo">Web Performance Optimization</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+      </div>
+		</div>
+		<div class="col-md-7">
+			<a href="https://github.com/gianarb/awesome-angularjs" class="btn btn-primary pull-right" target="_blank">View on Github</a>	
+			<article class="markdown-body">
+	  		<h1 id="awesome-angularjs-awesome-https-cdn-rawgit-com-sindresorhus-awesome-d7305f38d29fed78fa85652e3a63e154dd8e8829-media-badge-svg-https-github-com-sindresorhus-awesome-">Awesome AngularJS <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a></h1>
+<p>A list of awesome <a href="https://angularjs.org/">AngularJS</a> services, directives, filters, utilities and resources.</p>
+<p>Table of contents:</p>
+<ul>
+<li><a href="#seed-projects">Seed Projects</a></li>
+<li><a href="#user-manager">User Manager</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#web-service">Web Service</a></li>
+<li><a href="#asset-manager">Asset Manager</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#filter">Filter</a></li>
+<li><a href="#directive">Directive</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#data-manage">Data Manage</a></li>
+<li><a href="#developer">Developer</a></li>
+<li><a href="#view">View</a></li>
+<li><a href="#service">Service</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#chart">Chart</a></li>
+<li><a href="#task">Task</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2 id="seed-projects">Seed Projects</h2>
+<ul>
+<li><a href="https://github.com/AngularClass/NG6-starter">AngularClass/NG6-starter</a> - An AngularJS Starter repo for Angular + ES6 + (Webpack or JSPM) by <a href="https://github.com/AngularClass">@AngularClass</a>.</li>
+<li><a href="https://github.com/tomastrajan/angular-js-es6-testing-example">tomastrajan/angular-js-es6-testing-example</a> - Angular JS seed repository with focus on unit &amp; integration testing (ES6, webpack, karma, mocha), suitable for serious / enterprise projects.</li>
+<li><a href="https://github.com/ngParty/Angular1-scaffold">ngParty/Angular1-scaffold</a> - Angular (Tests, Dev/Prod), Karma, Jasmine, Istanbul, TypeScript, NgMetadata, TsLint, Codelyzer, Typings, and Webpack by <a href="https://github.com/ngParty">@ngParty</a></li>
+<li><a href="https://github.com/flatlogic/angular-material-dashboard">flatlogic/angular-material-dashboard</a> - Angular admin dashboard with material design</li>
+<li><a href="https://github.com/ngbp/ngbp">ngbp/ngbp</a> - A sophisticated build management system for web apps</li>
+<li><a href="https://github.com/vesparny/angular-kickstart">vesparny/angular-kickstart</a> - Speed up your AngularJS development and testing with a complete and scalable build system that scaffolds the project for you.</li>
+<li><a href="https://github.com/okigan/angular-sensible-seed">okigan/angular-sensible-seed</a>  - Opinionated AngularJS starter project with per feature directory structure, static content, gulp build system, integrated logo/search/ui-router/ui-bootstrap/less.</li>
+<li><a href="https://github.com/angular/angular-seed">angular/angular-seed</a> - Seed project for AngularJS apps.</li>
+<li><a href="https://github.com/vesparny/angularjs-playground">vesparny/angularjs-playground</a> - A starting point that follows best-practices, for being up and running in minutes with AngularJS.</li>
+<li><a href="https://github.com/kmaida/reStart-angular">kmaida/reStart-angular</a> - Responsive AngularJS seed project following styleguide best practices.</li>
+<li><a href="https://github.com/StarterSquad/ngseed">StarterSquad/ngSeed</a> - AngularJS/RequireJS seed project.</li>
+<li><a href="https://github.com/tnajdek/angular-requirejs-seed">tnajdek/angular-requirejs-seed</a> - This is a fork of Angular Seed but with changes needed for requireJS support.</li>
+<li><a href="https://github.com/btford/angular-express-blog">btford/angular-express-blog</a> - Example AngularJS app using an Express + Node.js backend.</li>
+<li><a href="https://github.com/btford/angular-socket-io-seed">btford/angular-socket-io-seed</a> - A great starting point for writing AngularJS apps backed by a Socket.io-powered node.js server.</li>
+<li><a href="https://github.com/ziyasal/ratchet-angular-seed">ziyasal/ratchet-angular-seed</a> - Seed project for AngularJS &amp; Ratchet apps.</li>
+<li><a href="https://github.com/jesalg/RADD">jesalg/RADD</a> - Example AngularJS app using Rails and Devise authentication gem.</li>
+<li><a href="https://github.com/linemanjs/lineman-angular-template">linemanjs/lineman-angular-template</a> - This is a project template for AngularJS applications using Lineman.</li>
+<li><a href="https://github.com/meanjs/mean">meanjs/mean</a> - Mongo + ExpressJS + AngularJS + NodeJS boilerplate.</li>
+<li><a href="https://github.com/linnovate/mean">linnovate/mean</a> - Mongo + ExpressJS + AngularJS + NodeJS boilerplate by Linnovate.</li>
+<li><a href="https://github.com/melvin0008/laravel-angular">melvin0008/laravel-angular</a> - Laravel + AngularJS + CouchDB boilerplate by Melvin.</li>
+<li><a href="https://github.com/giorgiofellipe/ionic-angular-parse-boilerplate">giorgiofellipe/ionic-angular-parse-boilerplate</a> - Ionic + AngularJS + Parse.com boilerplate by Giorgio Fellipe.</li>
+<li><a href="https://github.com/the-front/angularjs-ee-boilerplate">the-front/angularjs-ee-boilerplate</a> - This boilerplate (seed project, starting project) helps you build large scale AngularJS applications with Require.js by Erko Bridee.</li>
+<li><a href="https://github.com/ziyasal/ng-espack-boilerplate">ziyasal/ng-espack-boilerplate</a> - AngularJS 1.4x and ES6 application boilerplate /w testing practices using Webpack</li>
+<li><a href="https://github.com/akveo/blur-admin">akveo/blur-admin</a> - Free premium Angular 1.x Bootsrap Admin dashboard</li>
+<li><a href="https://github.com/gusgard/angular-seed-es6">gusgard/angular-seed-es6</a> - AngularJS 1.5 starter repo using best practices + ES6 + SASS + Browserify + BrowserSync.</li>
+<li><a href="https://github.com/simskij/angular-gulp-seed">simskij/angular-gulp-seed</a> AngularJS 1.5 Seed + Premade Gulp scripts and project directory layout.</li>
+<li><a href="https://github.com/simskij/angular-webpack-seed">simskij/angular-webpack-seed</a> AngularJS 1.6 seed using typescript and webpack</li>
+</ul>
+<h2 id="user-manager">User Manager</h2>
+<ul>
+<li><a href="https://github.com/lynndylanhurley/ng-token-auth">lynndylanhurley/ng-token-auth</a> - Token based authentication module for AngularJS.</li>
+<li><a href="https://github.com/andreareginato/oauth-ng">andreareginato/oauth-ng</a> - AngularJS directive for the OAuth 2.0 Implicit Flow.</li>
+<li><a href="https://github.com/angular-oauth/angular-oauth">enginous/angular-oauth</a> - Client-side (implicit grant) OAuth 2.0 authorization flow for AngularJS.</li>
+<li><a href="https://github.com/witoldsz/angular-http-auth">witoldsz/angular-http-auth</a> - HTTP Auth Interceptor Module.</li>
+<li><a href="https://github.com/sahat/satellizer">sahat/satellizer</a> - Token-based AngularJS Authentication.</li>
+<li><a href="https://github.com/userapp-io/userapp-angular">userapp-angular</a> - Adds user authentication to your app with UserApp.</li>
+</ul>
+<h2 id="mobile">Mobile</h2>
+<ul>
+<li><a href="https://github.com/ajoslin/angular-mobile-nav">ajoslin/angular-mobile-nav</a> - An AngularJS navigation service for mobile applications.</li>
+<li><a href="https://github.com/driftyco/ng-cordova/">driftyco/ng-cordova</a> - AngularJS Cordova wrappers for common Cordova plugins.</li>
+<li><a href="https://github.com/revolunet/angular-carousel">revolunet/angular-carousel</a> - Mobile friendly AngularJS carousel.</li>
+<li><a href="https://github.com/driftyco/ionic">driftyco/ionic</a> - Advanced HTML5 Hybrid Mobile App Framework.</li>
+<li><a href="https://github.com/NativeScript/NativeScript">NativeScript</a> - Build truly native cross-platform iOS and Android apps with AngularJS.</li>
+</ul>
+<h2 id="web-service">Web Service</h2>
+<ul>
+<li><a href="https://github.com/mgonto/restangular">mgonto/restangular</a> - AngularJS service to handle Rest API Restful Resources properly and easily.</li>
+<li><a href="https://github.com/chinmaymk/angular-cog">chinmaymk/angular-cog</a> - declarative ajax requests for AngularJS.</li>
+<li><a href="https://github.com/tkambler/bonegular">tkambler/bonegular</a> - Backbone-Inspired Models and Collections for AngularJS.</li>
+<li><a href="https://github.com/platanus/angular-restmod">platanus/angular-restmod</a> - Rails inspired REST-API ORM for AngularJS.</li>
+<li><a href="https://github.com/JohnnyTheTank/apiNG">JohnnyTheTank/apiNG</a> - AngularJS modules to handle Rest API requests via html-attributes and much more</li>
+</ul>
+<h2 id="asset-manager">Asset Manager</h2>
+<ul>
+<li><a href="https://github.com/danialfarid/ng-file-upload">danialfarid/ng-file-upload</a> - An AngularJS directive for file upload using HTML5 with FileAPI polyfill for unsupported browsers.</li>
+<li><a href="https://github.com/nervgh/angular-file-upload">nervgh/angular-file-upload</a> - Angular File Upload is a module for the AngularJS framework.</li>
+<li><a href="https://github.com/urish/angular-load">urish/angular-load</a> - Dynamically load scripts and css stylesheets in your AngularJS app.</li>
+<li><a href="https://github.com/flowjs/ng-flow">flowjs/ng-flow</a> - Flow.js html5 file upload extension on AngularJS framework.</li>
+<li><a href="https://github.com/joni2back/angular-filemanager">joni2back/angular-filemanager</a> - JavaScript HTML5 File Management Material Design Folder Explorer Navigator Browser Manager in AngularJS (with FTP in PHP / Java).</li>
+</ul>
+<h2 id="routing">Routing</h2>
+<ul>
+<li><a href="https://github.com/angular-ui/ui-router">angular-ui/ui-router</a> - The de-facto solution to flexible routing with nested views in AngularJS.</li>
+<li><a href="https://github.com/rpocklin/ui-router-tabs">rpocklin/ui-router-tabs</a> - Leverages UI Bootstrap and UI Router to give you full-strength route-driven tabs in Angular.js.</li>
+</ul>
+<h2 id="filter">Filter</h2>
+<ul>
+<li><a href="https://github.com/jdpedrie/angularjs-camelCase-to-human-filter">jdpedrie/angularjs-camelCase-to-human-filter</a> - AngularJS Filter to convert camelCase strings to human readable strings.</li>
+<li><a href="https://github.com/a8m/angular-filter">a8m/angular-filter</a> - Bunch of useful filters for collections, strings, math and boolean operations in AngularJS with no external dependencies.</li>
+</ul>
+<h2 id="directive">Directive</h2>
+<ul>
+<li><a href="https://github.com/johannesjo/angular-promise-buttons">johannesjo/angular-promise-buttons</a> - Chilled loading buttons for AngularJS.</li>
+<li><a href="https://github.com/zizzamia/ng-tasty">zizzamia/ng-tasty</a> - Lightweight, flexible, and tasty collection of reusable UI components for AngularJS, like grandma used to make. ( table directive, range filter ).</li>
+<li><a href="https://github.com/tombatossals/angular-leaflet-directive">tombatossals/angular-leaflet-directive</a> - AngularJS directive to embed and interact with maps managed by Leaflet library.</li>
+<li><a href="https://github.com/esvit/angular-social">esvit/angular-social</a> - Social like-buttons with counters for sites (even ajax sites).</li>
+<li><a href="https://github.com/sroze/ngInfiniteScroll/">sroze/ngInfiniteScroll</a> - Infinite Scrolling for AngularJS.</li>
+<li><a href="https://github.com/fraywing/textAngular/">fraywing/textAngular/</a> - A radically powerful Text-Editor/Wysiwyg editor for AngularJS! Create multiple editor instances, two-way-bind HTML content, watch editors for changes and more!</li>
+<li><a href="https://github.com/cgross/angular-busy">cgross/angular-busy</a> - Show busy/loading indicators on any element during $http requests.</li>
+<li><a href="https://github.com/lavinjj/angularjs-gravatardirective">lavinjj/angularjs-gravatardirective</a> - An AngularJS Gravatar Image Directive.</li>
+<li><a href="https://github.com/Venturocket/angular-slider">Venturocket/angular-slider</a> - Slider directive for AngularJS.</li>
+<li><a href="https://github.com/passy/angular-masonry">passy/angular-masonry</a> - An AngularJS directive for Masonry.</li>
+<li><a href="https://github.com/siddii/angular-timer">siddii/angular-timer</a> - re-usable/inter-operable AngularJS timer directive.</li>
+<li><a href="https://github.com/ajoslin/angular-scrolly">ajoslin/angular-scrolly</a> - Fake transform-scrolling with AngularJS-friendly utilities.</li>
+<li><a href="https://github.com/djds4rce/angular-socialshare">djds4rce/angular-socialshare</a> - social share buttons for AngularJS.</li>
+<li><a href="https://github.com/blackgate/bg-splitter">blackgate/bg-splitter</a> - Simple pane splitter for AngularJS.</li>
+<li><a href="https://github.com/fullscale/dangle">fullscale/dangle</a> - A set of AngularJS directives that provide common D3 visualizations for elasticsearch.</li>
+<li><a href="https://github.com/angular-ui/ui-tinymce">angular-ui/ui-tinymce</a> - AngularUI wrapper for TinyMCE.</li>
+<li><a href="https://github.com/angular-ui/bootstrap">angular-ui/bootstrap</a> - Native AngularJS directives for Bootstrap. Small footprint (5kB gzipped!), no 3rd party JS dependencies (jQuery, bootstrap JS) required!</li>
+<li><a href="https://github.com/chieffancypants/angular-hotkeys">chieffancypants/angular-hotkeys</a> - Configuration-centric keyboard shortcuts for your AngularJS apps.</li>
+<li><a href="https://github.com/marcorinck/angular-growl">marcorinck/angular-growl</a> - growl-like notifications for angularJS projects.</li>
+<li><a href="https://github.com/urish/angular-spinner">urish/angular-spinner</a> - AngularJS directive to show an animated spinner.</li>
+<li><a href="https://github.com/codef0rmer/angular-dragdrop">codef0rmer/angular-dragdrop</a> - Drag and Drop for AngularJS (with Animation).</li>
+<li><a href="https://github.com/asafdav/ng-csv">asafdav/ng-csv</a> - Simple directive that turns arrays and objects into downloadable CSV files.</li>
+<li><a href="https://github.com/angular-widgets/angular-jqm">angular-widgets/angular-jqm</a> - AngularJS directives for jQuery Mobile.</li>
+<li><a href="https://github.com/chieffancypants/angular-loading-bar">chieffancypants/angular-loading-bar</a> - A fully automatic loading / progress bar for your AngularJS apps.</li>
+<li><a href="https://github.com/angular-ui/ui-select">angular-ui/ui-select</a> - AngularJS-native version of Select2 and Selectize.</li>
+<li><a href="https://github.com/btford/angular-markdown-directive">btford/angular-markdown-directive</a> - AngularJS markdown directive using Showdown.js</li>
+<li><a href="https://github.com/yunlzheng/angular-knob">yunlzheng/angular-knob</a> - angular directive of jquery knob.</li>
+<li><a href="https://github.com/c0bra/angular-responsive-images">c0bra/angular-responsive-images</a> - AngularJS responsive images.</li>
+<li><a href="https://github.com/angular-ui/ui-sortable">angular-ui/ui-sortable</a> - AngularJS bindings for jQuery UI Sortable.</li>
+<li><a href="https://github.com/durated/angular-scroll">durated/angular-scroll</a> - Scrollspy, animated scrollTo and scroll events for AngularJS.</li>
+<li><a href="https://github.com/jeffling/angular-jl-tether">jeffling/ng-tether</a> - AngularJS wrapper for Tether: make absolutely positioned elements attach to elements in the page efficiently.</li>
+<li><a href="https://github.com/unosquare/tubular">unosquare/tubular</a> -AngularJS directives for grids and forms.</li>
+<li><a href="https://github.com/matowens/ng-notify">matowens/ng-notify</a> - A simple, lightweight module for displaying notifications in your AngularJS app.</li>
+<li><a href="https://github.com/luckylooke/dragular">dragular</a> - AngularJS drag and drop based on dragula.js.</li>
+<li><a href="https://github.com/hrajchert/angular-screenfull">hrajchert/angular-screenfull</a> - Binding to use the HTML5 fullscreen API using directives and directives controllers.</li>
+<li><a href="https://github.com/StevenLambion/ui-listView">StevenLambion/ui-listView</a> - An efficient, dynamic list view for AngularJS.</li>
+<li><a href="https://github.com/Sattvabit/angular-material-checkbox">Sattvabit/angular-material-checkbox</a> - Simple AngularJS check-box/toggle button directive using Google material design icons.</li>
+<li><a href="https://github.com/tushariscoolster/ng-sweet-alert">tushariscoolster/ng-sweet-alert</a> - Sweetalert directive for AngularJS, without writing single javascript code.</li>
+<li><a href="https://github.com/gkaimakas/angular.validators">gkaimakas/angular.validators</a> - Angular validation directives for forms. A port of validator.js</li>
+<li><a href="https://github.com/Foxandxss/angular-toastr">Foxandxss/angular-toastr</a> - Angular port of CodeSeven/toastr.</li>
+<li><a href="https://github.com/jirikavi/AngularJS-Toaster">jirikavi/AngularJS-Toaster</a> - AngularJS Toaster is a customized version of &quot;toastr&quot; non-blocking notification javascript library.</li>
+<li><a href="https://github.com/angular-slider/angularjs-slider">angular-slider/angularjs-slider</a> - Slider directive for AngularJS. No dependencies and mobile friendly.</li>
+<li><a href="https://github.com/ngReact/ngReact">ngReact/ngReact</a> - Use React Components in Angular.</li>
+<li><a href="https://github.com/m00s/angular-photoswipe">m00s/angular-photoswipe</a> - An angular directive for PhotoSwipe image gallery.</li>
+<li><a href="https://github.com/benjamincharity/angular-json-calendar">benjamincharity/angular-json-calendar</a> - An AngularJS module that generates calendar data as a JSON object and/or HTML.</li>
+<li><a href="https://github.com/kirstein/angular-autodisable">kirstein/angular-autodisable</a> - An extension to angular ng-click directive that automatically sets the element to disabled if the handler would return a promise.</li>
+<li><a href="https://github.com/benjamincharity/angular-keypad">benjamincharity/angular-keypad</a> - :iphone::1234: A numerical keypad built for mobile devices.</li>
+<li><a href="https://github.com/harm-less/angular-sticky">harm-less/angular-sticky</a> - :Pure javascript AngularJS directive to make elements stick when scrolling.</li>
+<li><a href="https://github.com/urish/angular-moment">urish/angular-moment</a> - AngularJS directive and filters for <a href="https://momentjs.com/">Moment.js</a>.</li>
+</ul>
+<h2 id="storage">Storage</h2>
+<ul>
+<li><a href="https://github.com/gsklee/ngStorage">gsklee/ngStorage</a> - localStorage and sessionStorage done right for AngularJS.</li>
+<li><a href="https://github.com/grevory/angular-local-storage">grevory/angular-local-storage</a> - An AngularJS module that gives you access to the browsers local storage with cookie fallback.</li>
+<li><a href="https://github.com/jmdobry/angular-cache">jmdobry/angular-cache</a> - angular-cache is a very useful replacement for AngularJS&#39;s $cacheFactory.</li>
+<li><a href="https://github.com/js-data/js-data-angular">jmdobry/angular-data</a> - Data store for AngularJS.</li>
+<li><a href="https://github.com/bramski/angular-indexedDB">bramski/angular-indexedDB</a> - An AngularJS serviceprovider to utilize indexedDB with AngularJS.</li>
+<li><a href="https://github.com/tymondesigns/angular-locker">tymondesigns/angular-locker</a> - A simple, configurable &amp; fluent abstraction for local/session storage in angular projects.</li>
+</ul>
+<h2 id="data-manage">Data Manage</h2>
+<ul>
+<li><a href="https://github.com/kogosoftwarellc/angular-async-form">kogosoftwarellc/angular-async-form</a> - Async form handling the angular way.</li>
+<li><a href="https://github.com/esvit/ng-table">esvit/ng-table</a> - Simple table with sorting and filtering on AngularJS.</li>
+<li><a href="https://github.com/huei90/angular-validation">huei90/angular-validation</a> - Client-side Validation for AngularJS.</li>
+<li><a href="https://github.com/formly-js/angular-formly">formly-js/angular-formly</a> - JavaScript powered forms.</li>
+<li><a href="https://github.com/kelp404/angular-validator">kelp404/angular-validator</a> - AngularJS form validation.</li>
+<li><a href="https://github.com/Textalk/angular-schema-form">Textalk/angular-schema-form</a> - Generate forms from a JSON schema, with AngularJS.</li>
+<li><a href="https://github.com/angular-ui/ui-grid">angular-ui/ng-grid</a> - UI Grid: an AngularJS Data Grid.</li>
+<li><a href="https://github.com/jbroquist/parse-angular">jbroquist/parse-angular</a> - Utilities for working with Parse.com data.</li>
+<li><a href="https://github.com/jimrhoskins/angular-parse">jimrhoskins/angular-parse</a> - Module for interacting with the Parse REST API.</li>
+<li><a href="https://github.com/laurihy/angular-payments">laurihy/angular-payments</a> - Module that provides AngularJS-directives for formatting, validating and working with payments.</li>
+<li><a href="https://github.com/lorenzofox3/Smart-Table">lorenzofox3/Smart-Table</a> - a table/grid for AngularJS.</li>
+<li><a href="https://github.com/vitalets/angular-xeditable">vitalets/angular-xeditable</a> - Edit in place for AngularJS.</li>
+<li><a href="https://github.com/MoonStorm/trNgGrid">MoonStorm/trNgGrid</a> - A feature rich AngularJS grid using standard HTML tables.</li>
+<li><a href="https://github.com/ceolter/ag-grid">ceolter/ag-grid</a> - Advanced Datagrid for Pure Javascript/AngularJS 1.x/AngularJS 2/Web Components.</li>
+<li><a href="https://github.com/mattiash/angular-tablesort">mattiash/angular-tablesort</a> - Sort AngularJS tables easily.</li>
+</ul>
+<h2 id="developer">Developer</h2>
+<ul>
+<li><a href="https://github.com/angular/protractor">angular/protractor</a> - E2E test framework for AngularJS apps.</li>
+<li><a href="https://github.com/matthieu-D/angular-lorem-image">matthieu-D/angular-lorem-image</a> - This directive provides lorem image generation for your website by using the great lorempixel service to generate images.</li>
+<li><a href="https://github.com/ajoslin/angular-promise-tracker">ajoslin/angular-promise-tracker</a> - Easily add spinners or general request tracking to your AngularJS app.</li>
+<li><a href="https://github.com/yeoman/generator-angular">yeoman/generator-angular</a> - Yeoman generator for AngularJS apps.</li>
+<li><a href="https://github.com/dustinspecker/generator-ng-poly">dustinspecker/generator-ng-poly</a> - Yeoman generator for AngularJS apps with customizable tooling. Adheres to John Papa and Todd Motto style guides, and features many robust subgenerators.</li>
+<li><a href="https://github.com/angular/batarang">angular/angularjs-batarang</a> - AngularJS WebInspector Extension for Chrome.</li>
+<li><a href="https://github.com/decipherinc/angular-debaser/">decipherinc/angular-debaser</a> - Just a better way to test AngularJS apps.</li>
+<li><a href="https://github.com/outbrain/Leonardo">outbrain/leonardo</a> - Add-on tool for centralizing your client side mocking.</li>
+<li><a href="https://github.com/rev087/ng-inspector">rev087/ng-inspector</a> - A browser extension that displays an inspector panel showing the AngularJS scope hierarchy in the current page in real time.</li>
+<li><a href="https://github.com/Linkurious/angular-performance">Linkurious/angular-performance</a> - A chrome extension aimed at monitoring angular application performance.</li>
+<li><a href="https://github.com/ocombe/ocLazyLoad">ocombe/ocLazyLoad</a> - Lazy load modules &amp; components in AngularJS.</li>
+<li><a href="https://github.com/angular-fullstack/generator-angular-fullstack">angular-fullstack/generator-angular-fullstack</a> - Yeoman AngularJS Full-Stack generator with an Express server.</li>
+</ul>
+<h2 id="view">View</h2>
+<ul>
+<li><a href="https://material.angularjs.org">Angular Material</a> - A set of reusable, well-tested, and accessible UI components based on Material Design.</li>
+<li><a href="http://mgcrea.github.io/angular-strap/">AngularStrap</a> - AngularJS native directives for Bootstrap.</li>
+<li><a href="http://angular-ui.github.io/">Angular UI</a> - Angular UI is the companion suite(s) to the AngularJS framework.</li>
+<li><a href="https://github.com/Augus/ngAnimate">Augus/ngAnimate</a> - ngAnimate is best effect solution made for AngularJS.</li>
+<li><a href="https://github.com/btford/angular-modal">btford/angular-modal</a> - Simple AngularJS service for creating modals.</li>
+</ul>
+<h2 id="service">Service</h2>
+<ul>
+<li><a href="https://github.com/btford/angular-socket-io">btford/angular-socket-io</a> - Socket.IO component for AngularJS.</li>
+<li><a href="https://github.com/firebase/angularFire">firebase/angularFire</a> - AngularJS bindings for Firebase.</li>
+<li><a href="https://github.com/olov/ng-annotate">olov/ng-annotate</a> - Add, remove and rebuild AngularJS dependency injection annotations.</li>
+<li><a href="https://github.com/pineconellc/angular-foundation">pineconellc/angular-foundation</a> - This project is a port of the AngularUI team&#39;s excellent angular-bootstrap project for use in the Foundation framework.</li>
+<li><a href="https://github.com/kendo-labs/angular-kendo">kendo-labs/angular-kendo</a> - A project to create a robust set of AngularJS bindings for Kendo UI widgets.</li>
+<li><a href="https://github.com/angular-ui/angular-google-maps">angular-ui/angular-google-maps</a> - AngularJS directives for the Google Maps Javascript API.</li>
+<li><a href="https://github.com/angulartics/angulartics">angulartics/angulartics</a> - Analytics for AngularJS applications.</li>
+<li><a href="https://github.com/Ciul/angular-facebook">Ciul/angular-facebook</a> - An AngularJS module based approach to the Facebook Javascript SDK.</li>
+<li><a href="https://github.com/pc035860/angular-easyfb">pc035860/angular-easyfb</a> - Super easy AngularJS + Facebook JavaScript SDK.</li>
+<li><a href="https://github.com/Orange-OpenSource/angular-swagger-ui">Orange-OpenSource/angular-swagger-ui</a> - An AngularJS implementation of Swagger UI.</li>
+</ul>
+<h2 id="internationalization">Internationalization</h2>
+<ul>
+<li><a href="https://github.com/angular-translate/angular-translate">angular-translate/angular-translate</a> - i18n in your AngularJS apps, made easy.</li>
+<li><a href="https://github.com/rubenv/angular-gettext">rubenv/angular-gettext</a> - Translate your AngularJS applications with gettext.</li>
+</ul>
+<h2 id="chart">Chart</h2>
+<ul>
+<li><a href="https://github.com/n3-charts/line-chart">n3-charts/line-chart</a> - Awesome charts for AngularJS.</li>
+<li><a href="https://github.com/bouil/angular-google-chart">bouil/angular-google-chart</a> - Google Chart Tools AngularJS Directive Module.</li>
+<li><a href="https://github.com/krispo/angular-nvd3">krispo/angular-nvd3</a> - angular directive using NVD3 charting library (based on d3).</li>
+<li><a href="https://github.com/chinmaymk/angular-charts">chinmaymk/angular-charts</a> - angular directives for creating common charts using d3.</li>
+<li><a href="https://github.com/carlcraig/tc-angular-chartjs">carlcraig/tc-angular-chartjs</a> - Add Chart.js charts to your AngularJS application.</li>
+<li><a href="https://github.com/stewones/angular-morris-chart">stpa-co/angular-morris-chart</a> - Create morris chart easily with this directives.</li>
+<li><a href="https://github.com/jtblin/angular-chart.js">jtblin/angular-chart.js</a> - Reactive, responsive, beautiful charts using Chart.js</li>
+<li><a href="https://github.com/AnyChart/AnyChart-AngularJS-v1.x">AnyChart/AnyChart-AngularJS-v1.x</a> - Create robust interactive charts using AnyChart JavaScript charting library with AngularJS v1.x.</li>
+</ul>
+<h2 id="task">Task</h2>
+<ul>
+<li><a href="https://github.com/ericclemmons/grunt-angular-templates">ericclemmons/grunt-angular-templates</a> - Grunt build task to concatenate &amp; pre-load your AngularJS templates.</li>
+<li><a href="https://github.com/Kagami/gulp-ng-annotate">Kagami/gulp-ng-annotate</a> - Add AngularJS dependency injection annotations with ng-annotate.</li>
+<li><a href="https://github.com/jeffling/ng-annotate-webpack-plugin">jeffling/ng-annotate-webpack-plugin</a> - Webpack plugin that runs ng-annotate on your bundles.</li>
+</ul>
+<h2 id="todomvc">TodoMVC</h2>
+<ul>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/angular-dart">angular-dart</a></li>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/angular2">angular2</a></li>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/angularjs-perf">angularjs-perf</a></li>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/angularjs">angularjs</a></li>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/angularjs_require">angularjs_require</a></li>
+<li><a href="https://github.com/tastejs/todomvc/tree/master/examples/typescript-angular">typescript-angular</a></li>
+</ul>
+<h2 id="other">Other</h2>
+<ul>
+<li><a href="https://github.com/toddmotto/angular-styleguide">toddmotto/angular-styleguide</a> - Angular styleguide for teams.</li>
+<li><a href="https://github.com/mgechev/angularjs-style-guide">mgechev/angularjs-style-guide</a> - Community-driven set of best practices for AngularJS application development.</li>
+<li><a href="https://github.com/shyamseshadri/angularjs-book">shyamseshadri/angularjs-book</a> - Examples and Code snippets from the AngularJS O&#39;Reilly book.</li>
+<li><a href="https://github.com/johnpapa/angular-styleguide">johnpapa/angularjs-styleguide</a> - A starting point for AngularJS development teams to provide consistency through good practices.</li>
+<li><a href="http://angular-js.in/">angular-js.in</a> - A curated collection of AngularJS directives.</li>
+<li><a href="https://github.com/mgechev/angularjs-in-patterns">mgechev/angularjs-in-patterns</a> - This repository provides different look into AngularJS.</li>
+<li><a href="https://github.com/Gillespie59/eslint-plugin-angular">Gillespie59/eslint-plugin-angular</a> - ESLint plugin for AngularJS application.</li>
+<li><a href="https://github.com/kasperlewau/angular-bind-notifier">kasperlewau/angular-bind-notifier</a> - Low $watch count namespaced AngularJS bindings, i.e. refreshment of one-way binds.</li>
+<li><a href="https://github.com/Aqu1nt/ng-next">Aqu1nt/ng-next</a> - A very simple and elegant way to use AngularJS 1.x with ES6 / ES7.</li>
+</ul>
+<h2 id="license">License</h2>
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"></a></p>
+<p>To the extent possible under law, <a href="http://gianarb.it">Gianluca Arbezzano</a> has waived all copyright and related or neighboring rights to this work.</p>
+
+	  	</article>
+		</div>
+		<div class="col-md-3">
+			<div id="sidebar">	
+				<div class="toc"></div>
+			</div>			
+		</div>		
+  </div>
+ 
+      <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
+    </div>
+    <script src="/assets/application-48a0c36ddfab25a0c51837d6726354a7.js"></script>
+  </body>
+</html>

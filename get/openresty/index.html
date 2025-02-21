@@ -1,0 +1,1160 @@
+  <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OpenResty | getAwesomeness()</title>
+    <meta name="keywords" content="awesome,awesomeness,getAwesomeness">
+    <meta name="description" content="Use getAwesomeness() to retrieve all amazing awesomeness from Github.">
+    
+      
+      <link rel="stylesheet" href="/assets/styles-36a7a3c2f617e9a498a4613e48f641bd.css" />
+    
+  </head>
+
+  
+  <!--[if lt IE 9]>
+    <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+  <![endif]-->
+
+  <body>
+  	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">getAwesomeness</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <iframe src="http://ghbtns.com/github-btn.html?user=panzhangwang&amp;repo=getawesomeness&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="45" style="padding: 15px 0 0 15px;"></iframe>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" id="typeahead" class="form-control" placeholder="Search List">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  	<div class="container">
+  		
+  		<div class="messages">
+        
+
+
+
+
+
+
+
+      </div>
+    		
+	<div class="row">
+		<div class="col-md-2">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">			  
+				
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="general">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_general" aria-expanded="true" aria-controls="_general">
+				          General
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_general" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="general">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/c">C</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cpp">C/C++</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/d">D</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/delphi">Delphi</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/fortran">Fortran</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/go">Go</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/rust">Rust</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/net">.Net</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/python">Python</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ruby">Ruby</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/swift">Swift</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="scripting">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_scripting" aria-expanded="true" aria-controls="_scripting">
+				          Scripting
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_scripting" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="scripting">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/autohotkey">AutoHotkey</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/coldfusion">ColdFusion</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/groovy">Groovy</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/js">JavaScript</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/shell">Shell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/lua">Lua</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/perl">Perl</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web.framework">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web.framework" aria-expanded="true" aria-controls="_web.framework">
+				          Web Framework
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web.framework" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web.framework">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/cakephp">CakePHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/laravel">Laravel</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/symfony">Symfony</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="jvm">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_jvm" aria-expanded="true" aria-controls="_jvm">
+				          JVM
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_jvm" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="jvm">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/java">Java</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/scala">Scala</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="domain.specific">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_domain.specific" aria-expanded="true" aria-controls="_domain.specific">
+				          Domain Specific
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_domain.specific" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="domain.specific">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/r">R</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="functional">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_functional" aria-expanded="true" aria-controls="_functional">
+				          Functional
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_functional" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="functional">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/elixir">Elixir</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ocaml">OCaml</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/haskell">Haskell</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang">Erlang</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/erlang_bm">Erlang Bookmarks</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="web">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_web" aria-expanded="true" aria-controls="_web">
+				          Web
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_web" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="web">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/angularjs">AngularJS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/backbone">Backbone</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dojo">Dojo</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/jquery">jQuery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/knockout">Knockout</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nodejs">Node</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/php">PHP</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/react">React</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/webcomponents">Web Components</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="mobile">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_mobile" aria-expanded="true" aria-controls="_mobile">
+				          Mobile
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_mobile" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="mobile">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/android">Android</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/apple">Apple</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ios">iOS</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/cordova">Cordova</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="frontend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_frontend" aria-expanded="true" aria-controls="_frontend">
+				          Frontend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_frontend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="frontend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docs">Documentation</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/svg">SVG</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/images">Images</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/front_dev">Frontend Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/h5">HTML5</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="backend">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_backend" aria-expanded="true" aria-controls="_backend">
+				          Backend
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_backend" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="backend">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/docker">Docker</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/gamedev">Game Development</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openresty">OpenResty</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/servicesengineering">Services Engineering</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/sysadmin">Sysadmin</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="danymic">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_danymic" aria-expanded="true" aria-controls="_danymic">
+				          Danymic
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_danymic" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="danymic">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/clojure">Clojure</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/julia">Julia</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="editors">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_editors" aria-expanded="true" aria-controls="_editors">
+				          Editors
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_editors" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="editors">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/sublime">Sublime Text</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vim">Vim</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="self.education">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_self.education" aria-expanded="true" aria-controls="_self.education">
+				          Self Education
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_self.education" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="self.education">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/algorithm">Algorithm</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/conferences">Conferences</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/testbook">Testing Books</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/koans">Koans</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/openscience">Open Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/papers">Papers</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/talks">Talks</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/weekly">Weekly Newsletters</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="data">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_data" aria-expanded="true" aria-controls="_data">
+				          Data
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_data" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="data">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/analytics">Analytics</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/db">Database</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/datascience">Data Science</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dataset">Dataset</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ml">Machine Learning</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/hadoop">Hadoop</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="dev.tools">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_dev.tools" aria-expanded="true" aria-controls="_dev.tools">
+				          Dev Tools
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_dev.tools" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="dev.tools">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/tools">Tools of The Trade</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/dotfiles">Dotfiles</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/devenv">Dev Env</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="platforms">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_platforms" aria-expanded="true" aria-controls="_platforms">
+				          Platforms
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_platforms" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="platforms">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/osx">OS X</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+					<div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="others">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#_others" aria-expanded="true" aria-controls="_others">
+				          Others
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="_others" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="others">
+				      
+			        <div class="list-group">          	
+		            
+		              <h4><a class="list-group-item" href="/get/ccm">Creative Commons Media</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/ciandcd">Continuous Delivery</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/community">Community</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/styleguide">Styleguides</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/nlp">Natural Language Processing</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/vagrant">Vagrant</a></h4>
+		            
+		              <h4><a class="list-group-item" href="/get/wpo">Web Performance Optimization</a></h4>
+		            
+		          </div>
+				    </div>
+				  </div>	         
+	      
+      </div>
+		</div>
+		<div class="col-md-7">
+			<a href="https://github.com/bungle/awesome-resty" class="btn btn-primary pull-right" target="_blank">View on Github</a>	
+			<article class="markdown-body">
+	  		<h1 id="awesome-resty">awesome-resty</h1>
+<p>A List of OpenResty / Nginx modules, Lua libraries, and related resources.</p>
+<h2 id="what-is-openresty">What is OpenResty</h2>
+<p><img src="https://github.com/bungle/awesome-resty/raw/master/images/logo.png" alt="OpenResty Logo"></p>
+<p>OpenResty is a full-fledged web platform by integrating the standard Nginx core, LuaJIT, many carefully written Lua libraries, lots of high quality 3rd-party Nginx modules, and most of their external dependencies. It is designed to help developers easily build scalable web applications, web services, and dynamic web gateways.</p>
+<p>By taking advantage of various well-designed Nginx modules (most of which are developed by the OpenResty team themselves), OpenResty effectively turns the nginx server into a powerful web app server, in which the web developers can use the Lua programming language to script various existing nginx C modules and Lua modules and construct extremely high-performance web applications that are capable to handle 10K ~ 1000K+ connections in a single box.</p>
+<p>OpenResty aims to run your server-side web app completely in the Nginx server, leveraging Nginx&#39;s event model to do non-blocking I/O not only with the HTTP clients, but also with remote backends like MySQL, PostgreSQL, Memcached, and Redis.</p>
+<p>Real-world applications of OpenResty range from dynamic web portals and web gateways, web application firewalls, web service platforms for mobile apps/advertising/distributed storage/data analytics, to full-fledged dynamic web applications and web sites. The hardware used to run OpenResty also ranges from very big metals to embedded devices with very limited resources. It is not uncommon for our production users to serve billions of requests daily for millions of active users with just a handful of machines.</p>
+<p>OpenResty is not an Nginx fork. It is just a software bundle. Most of the patches applied to the Nginx core in OpenResty have already been submitted to the official Nginx team and most of the patches submitted have also been accepted. We are trying hard not to fork Nginx and always to use the latest best Nginx core from the official Nginx team.</p>
+<h2 id="official-channels">Official Channels</h2>
+<ul>
+<li>Web Site: <a href="http://openresty.org/">http://openresty.org/</a></li>
+<li>Mailing List: <a href="https://groups.google.com/forum/#!forum/openresty-en">https://groups.google.com/forum/#!forum/openresty-en</a> (<a href="https://groups.google.com/forum/#!forum/openresty">Chinese List</a>)</li>
+<li>Github Organization: <a href="https://github.com/openresty">https://github.com/openresty</a></li>
+<li>Lead Developer: <a href="https://github.com/agentzh">@agentzh</a></li>
+<li>OpenResty Package Manager (<code>opm</code>): <a href="https://opm.openresty.org/">package repository</a>, <a href="https://github.com/openresty/opm">opm sources</a></li>
+</ul>
+<h2 id="how-to-contribute-on-this-list-">How to Contribute on this List?</h2>
+<p>There are at least three different ways to contribute:</p>
+<ol>
+<li><a href="https://github.com/bungle/awesome-resty/issues/new">Create a New Issue</a> where you describe the needed additions, deletions or changes.</li>
+<li><a href="https://github.com/bungle/awesome-resty/fork">Fork this repository</a> and make the changes, and create a pull request.</li>
+<li><a href="https://groups.google.com/forum/#!topic/openresty-en/VSj4_8GNORI">Post a reply</a> in the awesome-resty thread in openresty-en mailing list.</li>
+</ol>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#modules">Modules</a><ul>
+<li><a href="#core-modules">Core Modules</a></li>
+<li><a href="#core-nginx-modules">Core Nginx Modules</a></li>
+<li><a href="#third-party-nginx-modules">Third-party Nginx Modules</a></li>
+</ul>
+</li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#core-libraries">Core Libraries</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#web-development-essentials">Web Development Essentials</a></li>
+<li><a href="#routing-libraries">Routing Libraries</a></li>
+<li><a href="#traffic-management">Traffic Management</a></li>
+<li><a href="#request-argments-parsers">Request Argments Parsers</a></li>
+<li><a href="#middleware-and-api-tools">Middleware and API Tools</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#databases-and-storages">Databases and Storages</a></li>
+<li><a href="#testing-and-profiling">Testing and Profiling</a></li>
+<li><a href="#message-queuing-and-task-management">Message Queuing and Task Management</a></li>
+<li><a href="#bar-codes-and-qr-codes">Bar Codes and QR Codes</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#text-formats">Text Formats</a></li>
+<li><a href="#binary-formats">Binary Formats</a></li>
+<li><a href="#document-formats">Document Formats</a></li>
+<li><a href="#image-formats">Image Formats</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#metrics-and-statistics">Metrics and Statistics</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#functional-programming">Functional Programming</a></li>
+<li><a href="#web-apis">Web APIs</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#other-sources-for-libraries">Other Sources for Libraries</a></li>
+</ul>
+</li>
+<li><a href="#books-and-tutorials">Books and Tutorials</a><ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials-and-guides">Tutorials and Guides</a></li>
+</ul>
+</li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#conferences-workshops-and-events">Conferences, Workshops and Events</a></li>
+<li><a href="#demo-applications">Demo Applications</a></li>
+<li><a href="#see-also">See Also</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="modules">Modules</h2>
+<h4 id="core-modules">Core Modules</h4>
+<p>Core modules come bundled in OpenResty package.</p>
+<ul>
+<li><a href="https://github.com/openresty/openresty">ngx_openresty</a> — Turning Nginx into a full-fledged Web App Server - Sources for OpenResty Bundle Generation</li>
+<li><a href="https://github.com/openresty/lua-nginx-module">lua-nginx-module</a> — Embed the power of Lua into Nginx</li>
+<li><a href="https://github.com/openresty/stream-lua-nginx-module">stream-lua-nginx-module</a> — Embed the power of Lua into Nginx stream/TCP Servers</li>
+<li><a href="https://github.com/openresty/echo-nginx-module">echo-nginx-module</a> — An Nginx module for bringing the power of &quot;echo&quot;, &quot;sleep&quot;, &quot;time&quot; and more to Nginx&#39;s config file</li>
+<li><a href="https://github.com/openresty/xss-nginx-module">xss-nginx-module</a> — Native support for cross-site scripting (XSS) in an nginx</li>
+<li><a href="https://github.com/openresty/set-misc-nginx-module">set-misc-nginx-module</a> — Various set_xxx directives added to nginx&#39;s rewrite module (md5/sha1, sql/json quoting, and many more)</li>
+<li><a href="https://github.com/openresty/encrypted-session-nginx-module">encrypted-session-nginx-module</a> — Encrypt and decrypt Nginx variable values</li>
+<li><a href="https://github.com/openresty/srcache-nginx-module">srcache-nginx-module</a> — Transparent subrequest-based caching layout for arbitrary nginx locations</li>
+<li><a href="https://github.com/openresty/lua-upstream-nginx-module">lua-upstream-nginx-module</a> — Nginx C module to expose Lua API to ngx_lua for Nginx upstreams</li>
+<li><a href="https://github.com/openresty/headers-more-nginx-module">headers-more-nginx-module</a> — Set and clear input and output headers...more than &quot;add&quot;!</li>
+<li><a href="https://github.com/openresty/array-var-nginx-module">array-var-nginx-module</a> — Add support for array variables to nginx config files</li>
+<li><a href="https://github.com/openresty/memc-nginx-module">memc-nginx-module</a> — An extended version of the standard memcached module that supports set, add, delete, and many more memcached commands</li>
+<li><a href="https://github.com/openresty/redis2-nginx-module">redis2-nginx-module</a> — Nginx upstream module for the Redis 2.0 protocol</li>
+<li><a href="https://github.com/openresty/rds-json-nginx-module">rds-json-nginx-module</a> — An nginx output filter that formats Resty DBD Streams generated by ngx_drizzle and others to JSON</li>
+<li><a href="https://github.com/openresty/rds-csv-nginx-module">rds-csv-nginx-module</a> — Nginx output filter module to convert Resty-DBD-Streams (RDS) to Comma-Separated Values (CSV)</li>
+<li><a href="https://github.com/openresty/drizzle-nginx-module">drizzle-nginx-module</a> — An Nginx upstream module that talks to mysql and drizzle by libdrizzle</li>
+<li><a href="https://github.com/FRiCKLE/ngx_postgres">ngx_postgres</a> — Upstream module that allows Nginx to communicate directly with PostgreSQL database</li>
+<li><a href="https://github.com/calio/form-input-nginx-module">form-input-nginx-module</a> — This is a nginx module that reads HTTP POST and PUT request body encoded in &quot;application/x-www-form-urlencoded&quot;, and parse the arguments in request body into nginx variables.</li>
+<li><a href="https://github.com/FRiCKLE/ngx_coolkit">ngx_coolkit</a> — Collection of small and useful nginx add-ons</li>
+<li><a href="https://github.com/simpl/ngx_devel_kit">ngx_devel_kit</a> — an Nginx module that adds additional generic tools that module developers can use in their own modules</li>
+</ul>
+<p>Please also note that there is <strong><code>resty</code></strong> command line client included in OpenResty bundle. The <a href="https://github.com/openresty/resty-cli">command line client sources</a> can be found on Github.</p>
+<h4 id="core-nginx-modules">Core Nginx Modules</h4>
+<p>To learn more about Nginx Core Modules, please refer <a href="http://nginx.org/en/docs/">Nginx Documentation</a>. Some modules that come with Nginx are (not all of them are build by default):</p>
+<ul>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_core_module.html">ngx_http_core_module</a></li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_ssl_module.html">ngx_http_ssl_module</a> — The ngx_http_ssl_module module provides the necessary support for HTTPS</li>
+<li><a href="https://nginx.org/en/docs/http/ngx_http_v2_module.html">ngx_http_v2_module</a> — The ngx_http_v2_module module provides support for HTTP/2</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_realip_module.html">ngx_http_realip_module</a> — The ngx_http_realip_module module is used to change the client address and optional port to the one sent in the specified header fields</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_addition_module.html">ngx_http_addition_module</a> — The ngx_http_addition_module module is a filter that adds text before and after a response</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_xslt_module.html">ngx_http_xslt_module</a> — The ngx_http_xslt_module is a filter that transforms XML responses using one or more XSLT stylesheet</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_image_filter_module.html">ngx_http_image_filter_module</a> — The ngx_http_image_filter_module module is a filter that transforms images in JPEG, GIF, and PNG formats</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_geoip_module.html">ngx_http_geoip_module</a> — The ngx_http_geoip_module module creates variables with values depending on the client IP address, using the precompiled MaxMind databases</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_sub_module.html">ngx_http_sub_module</a> — The ngx_http_sub_module module is a filter that modifies a response by replacing one specified string by another</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_dav_module.html">ngx_http_dav_module</a> — The ngx_http_dav_module module is intended for file management automation via the WebDAV protocol. The module processes HTTP and WebDAV methods PUT, DELETE, MKCOL, COPY, and MOVE</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_flv_module.html">ngx_http_flv_module</a> — The ngx_http_flv_module module provides pseudo-streaming server-side support for Flash Video (FLV) files</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_mp4_module.html">ngx_http_mp4_module</a> — The ngx_http_mp4_module module provides pseudo-streaming server-side support for MP4 files. Such files typically have the .mp4, .m4v, or .m4a filename extensions</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_gunzip_module.html">ngx_http_gunzip_module</a> — The ngx_http_gunzip_module module is a filter that decompresses responses with “Content-Encoding: gzip” for clients that do not support “gzip” encoding method. The module will be useful when it is desirable to store data compressed to save space and reduce I/O costs</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html">ngx_http_gzip_static_module</a> — The ngx_http_gzip_static_module module allows sending precompressed files with the “.gz” filename extension instead of regular files</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_auth_request_module.html">ngx_http_auth_request_module</a> — The ngx_http_auth_request_module module implements client authorization based on the result of a subrequest</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_random_index_module.html">ngx_http_random_index_module</a> — The ngx_http_random_index_module module processes requests ending with the slash character (‘/’) and picks a random file in a directory to serve as an index file</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_secure_link_module.html">ngx_http_secure_link_module</a> — The ngx_http_secure_link_module module (0.7.18) is used to check authenticity of requested links, protect resources from unauthorized access, and limit link lifetime</li>
+<li><a href="https://nginx.org/en/docs/http/ngx_http_slice_module.html">ngx_http_slice_module</a> — The ngx_http_slice_module module is a filter that splits a request into subrequests, each returning a certain range of response</li>
+<li><a href="https://nginx.org/en/docs/http/ngx_http_stub_status_module.html">ngx_http_stub_status_module</a> — The ngx_http_stub_status_module module provides access to basic status information</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_charset_module.html">ngx_http_charset_module</a> — The ngx_http_charset_module module adds the specified charset to the “Content-Type” response header field</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_gzip_module.html">ngx_http_gzip_module</a> — The ngx_http_gzip_module module is a filter that compresses responses using the “gzip” method</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_ssi_module.html">ngx_http_ssi_module</a> — The ngx_http_ssi_module module is a filter that processes SSI (Server Side Includes) commands in responses passing through it</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_userid_module.html">ngx_http_userid_module</a> — The ngx_http_userid_module module sets cookies suitable for client identification</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_access_module.html">ngx_http_access_module</a> — The ngx_http_access_module module allows limiting access to certain client addresses</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_auth_basic_module.html">ngx_http_auth_basic_module</a> — The ngx_http_auth_basic_module module allows limiting access to resources by validating the user name and password using the “HTTP Basic Authentication” protocol</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_autoindex_module.html">ngx_http_autoindex_module</a> — The ngx_http_autoindex_module module processes requests ending with the slash character (‘/’) and produces a directory listing</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_geo_module.html">ngx_http_geo_module</a> — The ngx_http_geo_module module creates variables with values depending on the client IP address</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_map_module.html">ngx_http_map_module</a> — The ngx_http_map_module module creates variables whose values depend on values of other variables</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_split_clients_module.html">ngx_http_split_clients_module</a> — The ngx_http_split_clients_module module creates variables suitable for A/B testing, also known as split testing</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_referer_module.html">ngx_http_referer_module</a> — The ngx_http_referer_module module is used to block access to a site for requests with invalid values in the “Referer” header field</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_rewrite_module.html">ngx_http_rewrite_module</a> — The ngx_http_rewrite_module module is used to change request URI using PCRE regular expressions, return redirects, and conditionally select configurations</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html">ngx_http_proxy_module</a> — The ngx_http_proxy_module module allows passing requests to another server</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html">ngx_http_fastcgi_module</a> — The ngx_http_fastcgi_module module allows passing requests to a FastCGI server</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_uwsgi_module.html">ngx_http_uwsgi_module</a> — The ngx_http_uwsgi_module module allows passing requests to a uwsgi server</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_scgi_module.html">ngx_http_scgi_module</a> — The ngx_http_scgi_module module allows passing requests to an SCGI server</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_memcached_module.html">ngx_http_memcached_module</a> — he ngx_http_memcached_module module is used to obtain responses from a memcached server</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_limit_conn_module.html">ngx_http_limit_conn_module</a> — The ngx_http_limit_conn_module module is used to limit the number of connections per the defined key, in particular, the number of connections from a single IP address</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_limit_req_module.html">ngx_http_limit_req_module</a> — he ngx_http_limit_req_module module is used to limit the request processing rate per a defined key, in particular, the processing rate of requests coming from a single IP address</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_empty_gif_module.html">ngx_http_empty_gif_module</a> — The ngx_http_empty_gif_module module emits single-pixel transparent GIF</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_browser_module.html">ngx_http_browser_module</a> — The ngx_http_browser_module module creates variables whose values depend on the value of the “User-Agent” request header field</li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_upstream_module.html">ngx_http_upstream_module</a> — <a href="http://nginx.org/en/docs/http/ngx_http_upstream_module.html">http://nginx.org/en/docs/http/ngx_http_upstream_module.html</a></li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_perl_module.html">ngx_http_perl_module</a> — The ngx_http_perl_module module is used to implement location and variable handlers in Perl and insert Perl calls into SSI</li>
+<li><a href="http://nginx.org/en/docs/mail/ngx_mail_core_module.html">ngx_mail_core_module</a></li>
+<li><a href="http://nginx.org/en/docs/mail/ngx_mail_ssl_module.html">ngx_mail_ssl_module</a> — The ngx_mail_ssl_module module provides the necessary support for a mail proxy server to work with the SSL/TLS protocol</li>
+<li><a href="http://nginx.org/en/docs/mail/ngx_mail_smtp_module.html">ngx_mail_smtp_module</a></li>
+<li><a href="http://nginx.org/en/docs/mail/ngx_mail_imap_module.html">ngx_mail_imap_module</a></li>
+<li><a href="http://nginx.org/en/docs/mail/ngx_mail_pop3_module.html">ngx_mail_pop3_module</a></li>
+<li><a href="http://nginx.org/en/docs/stream/ngx_stream_core_module.html">ngx_stream_core_module</a></li>
+<li><a href="http://nginx.org/en/docs/stream/ngx_stream_ssl_module.html">ngx_stream_ssl_module</a> — The ngx_stream_ssl_module module provides the necessary support for a stream proxy server to work with the SSL/TLS protocol</li>
+<li><a href="http://nginx.org/en/docs/stream/ngx_stream_proxy_module.html">ngx_stream_proxy_module</a> — The ngx_stream_proxy_module module allows proxying data streams over TCP, UDP, and UNIX-domain sockets</li>
+</ul>
+<h4 id="third-party-nginx-modules">Third-party Nginx Modules</h4>
+<ul>
+<li><a href="https://github.com/api7/lua-var-nginx-module">lua-var-nginx-module</a> — Fetchs Nginx variable by Luajit with FFI way which is fast and cheap</li>
+<li><a href="https://github.com/slact/ngx_lua_ipc">ngx_lua_ipc</a> — Interprocess communication for Lua Nginx Module and OpenResty — send named alerts with string data between Nginx worker processes</li>
+<li><a href="https://nchan.io/">nchan</a> (<a href="https://github.com/slact/nchan">Github</a>) — Fast, horizontally scalable, multiprocess pub/sub queuing server and proxy for HTTP, long-polling, Websockets and EventSource (SSE)</li>
+<li><a href="http://ngxpagespeed.com/">ngx_pagespeed</a> (<a href="https://github.com/pagespeed/ngx_pagespeed">Github</a>) — Automatic PageSpeed optimization module for Nginx</li>
+<li><a href="https://www.modsecurity.org/">ModSecurity</a> — Open Source Web Application Firewall</li>
+<li><a href="https://github.com/nbs-system/naxsi">NAXSI</a> — NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX; NAXSI means Nginx Anti Xss &amp; Sql Injection</li>
+<li><a href="https://github.com/weibocom/nginx-upsync-module">nginx-upsync-module</a> — Nginx C module, syncing upstreams from consul or others, dynamiclly adjusting backend servers weight, needn&#39;t reload nginx</li>
+<li><a href="https://github.com/mneudert/sass-nginx-module">sass-nginx-module</a> — Syntactically Awesome Nginx Module</li>
+<li><a href="https://www.nginx.com/resources/wiki/modules/">More 3rd Party Modules</a></li>
+</ul>
+<h2 id="libraries">Libraries</h2>
+<h4 id="core-libraries">Core Libraries</h4>
+<p>Core Libraries are bundled in OpenResty package, and you don&#39;t need to separately install them.</p>
+<ul>
+<li><a href="https://github.com/openresty/lua-resty-core">lua-resty-core</a> — New FFI-based Lua API for the ngx_lua module</li>
+<li><a href="https://github.com/openresty/lua-resty-upstream-healthcheck">lua-resty-upstream-healthcheck</a> — Health Checker for Nginx Upstream Servers in Pure Lua</li>
+<li><a href="https://github.com/openresty/lua-resty-string">lua-resty-string</a> — String utilities and common hash functions for ngx_lua and LuaJIT</li>
+<li><a href="https://github.com/openresty/lua-resty-lock">lua-resty-lock</a> — Simple nonblocking lock API for ngx_lua based on shared memory dictionaries</li>
+<li><a href="https://github.com/openresty/lua-resty-lrucache">lua-resty-lrucache</a> — Lua-land LRU Cache based on LuaJIT FFI</li>
+<li><a href="https://github.com/openresty/lua-resty-dns">lua-resty-dns</a> — DNS resolver for the Nginx Lua module</li>
+<li><a href="https://github.com/jkeys089/lua-resty-resolver">lua-resty-resolver</a> — Caching DNS resolver for ngx_lua and LuaJIT</li>
+<li><a href="https://github.com/openresty/lua-resty-upload">lua-resty-upload</a> — Streaming reader and parser for HTTP file uploading based on ngx_lua cosocket</li>
+<li><a href="https://github.com/openresty/lua-resty-websocket">lua-resty-websocket</a> — Lua WebSocket implementation for the ngx_lua module</li>
+<li><a href="https://github.com/openresty/lua-resty-mysql">lua-resty-mysql</a> — Non-blocking Lua MySQL client driver for ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/openresty/lua-resty-memcached">lua-resty-memcached</a> — Lua memcached client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/openresty/lua-resty-redis">lua-resty-redis</a> — Lua Redis client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/openresty/lua-redis-parser">lua-redis-parser</a> — Redis reply parser and request constructor library for Lua</li>
+<li><a href="https://github.com/openresty/lua-rds-parser">lua-rds-parser</a> — Resty-DBD-Stream (RDS) parser for Lua written in C</li>
+<li><a href="https://github.com/openresty/lua-cjson">lua-cjson</a> — Lua cJSON is a fast JSON encoding / parsing module for Lua</li>
+<li><a href="https://github.com/openresty/lua-resty-shdict-simple">lua-resty-shdict-simple</a> — Simple applicaton-oriented interface to the OpenResty shared dictionary API</li>
+<li><a href="https://github.com/openresty/lua-resty-memcached-shdict">lua-resty-memcached-shdict</a> — Powerful memcached client with a shdict caching layer and many other features</li>
+<li><a href="https://github.com/openresty/lua-resty-signal">lua-resty-signal</a> — Lua library for killing or sending signals to Linux processes</li>
+<li><a href="https://github.com/openresty/lua-tablepool">lua-tablepool</a> — Lua table recycling pools for LuaJIT</li>
+<li><a href="https://github.com/openresty/lua-resty-shell">lua-resty-shell</a> — Lua module for nonblocking system shell command executions</li>
+</ul>
+<h4 id="web-frameworks">Web Frameworks</h4>
+<ul>
+<li><a href="http://leafo.net/lapis/">Lapis</a> — Lapis is a framework for building web applications using MoonScript or Lua that runs inside of a customized version of Nginx called OpenResty</li>
+<li><a href="http://lor.sumory.com/">lor</a> (<a href="https://github.com/sumory/lor">Github</a>) — A fast and minimalist web framework based on OpenResty</li>
+<li><a href="https://github.com/idevz/vanilla">Vanilla</a> — An OpenResty Web Framework</li>
+<li><a href="https://github.com/luastar/luastar">luastar</a> — A HTTP server and web framework based on OpenResty</li>
+<li><a href="https://github.com/Olivine-Labs/lusty">Lusty</a> — Lua RESTful Web Application Framework, an extensible and speedy web framework</li>
+<li><a href="https://github.com/ostinelli/gin">GIN</a> — A fast, low-latency, low-memory footprint, web JSON-API framework with Test Driven Development helpers and patterns</li>
+<li><a href="https://github.com/dualface/quickserver">Quick Server</a> — A Server Framework Based on OpenResty</li>
+<li><a href="https://github.com/sailorproject/sailor">Sailor</a> — A Lua MVC Web Framework</li>
+<li><a href="https://github.com/pintsized/lua-resty-rack">lua-resty-rack</a> — A simple and extensible HTTP server framework for OpenResty</li>
+<li><a href="https://github.com/appwilldev/moochine">MOOCHINE</a> — A simple and lightweight web framework based on OpenResty</li>
+<li><a href="https://github.com/jtarchie/sinatra-openresty">sinatra-openresty</a> — Sinatra ported to OpenResty framework</li>
+<li><a href="https://github.com/kindy/lj-web">lj-web</a> — Lightweight Web Framework Based On ngx_openresty</li>
+<li><a href="https://github.com/losinggeneration/gimlet">Gimlet Cocktail</a> — A micro web application framework for OpenResty written in Moonscript inspired by Martini &amp; Sinatra</li>
+<li><a href="https://github.com/doujiang24/durap">durap</a> — Durap is a Lua Web Framework based on OpenResty.</li>
+<li><a href="https://github.com/bakins/stardust">Ziggy Stardust</a> — Ziggy Stardust (or just &quot;stardust&quot;) is a simple nginx/Lua framework inspired by Sinatra, Express, and Mercury</li>
+<li><a href="https://github.com/mrxx/zLua">zLua</a> — A Codeigniter like Lua framework based on OpenResty</li>
+<li><a href="https://github.com/antonheryanto/lua-resty-stack">lua-resty-stack</a> — OpenResty Simple Application Stack</li>
+<li><a href="https://github.com/zhangf911/dodolu">dodolu</a> — A lightweight web framework based on OpenResty</li>
+<li><a href="https://github.com/cyberz-eu/octopus">Octopus</a> — The Lua Web Platform</li>
+<li><a href="https://github.com/RocksonZeta/vicky">vicky</a> — A restful framework for openresty,inspired by expressjs and koa.</li>
+<li><a href="https://github.com/solisoft/fasty">fasty</a> - A CMS based on openresty, arangoDB, lapis &amp; riotjs</li>
+</ul>
+<h4 id="web-development-essentials">Web Development Essentials</h4>
+<ul>
+<li><a href="https://github.com/3scale/lua-resty-url">lua-resty-url</a> — URL parser for OpenResty</li>
+<li><a href="https://github.com/cloudflare/lua-resty-cookie">lua-resty-cookie</a> — Lua library for HTTP cookie manipulations for OpenResty/ngx_lua</li>
+<li><a href="https://github.com/detailyang/lua-resty-cors">lua-resty-cors</a> — The Cross-Origin Resource Sharing (CORS) implementation for OpenResty</li>
+<li><a href="https://github.com/bungle/lua-resty-session">lua-resty-session</a> — Session library for OpenResty implementing Secure Cookie Protocol</li>
+<li><a href="https://github.com/woothee/lua-resty-woothee">lua-resty-woothee</a> — The Lua-Openresty implementation of Project Woothee, which is a multi-language user-agent strings parsers</li>
+<li><a href="https://github.com/isage/lua-resty-mobile">lua-resty-mobile</a> — This library parses HTTP headers and detects mobile device</li>
+<li><a href="https://github.com/SkyLothar/lua-resty-jwt">lua-resty-jwt</a> — JWT (JSON Web Tokens) for The Great OpenResty</li>
+<li><a href="https://github.com/golgote/neturl">neturl</a> — URL and Query string parser, builder, normalizer for Lua</li>
+<li><a href="https://github.com/iresty/Mio">Mio</a> — API statistics/summary and health datas in NGINX based on OpenResty, just like NGINX Plus</li>
+<li><a href="https://github.com/lifeblood/lua-redis-admin">lua-redis-admin</a> — redis client tool,redis web client,redis web ui,openresty lor lua framework support</li>
+</ul>
+<h4 id="routing-libraries">Routing Libraries</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-route">lua-resty-route</a> — A URL routing library for OpenResty supporting multiple route matchers, middleware, and HTTP and WebSockets handlers to mention a few of its features</li>
+<li><a href="https://github.com/APItools/router.lua">router.lua</a> — A barebones router for Lua, it matches URLs and executes Lua functions</li>
+<li><a href="https://github.com/toritori0318/lua-resty-r3">lua-resty-r3</a> — <a href="https://github.com/c9s/r3">libr3</a> OpenResty implementation, libr3 is a high-performance path dispatching library. It compiles your route paths into a prefix tree (trie). By using the constructed prefix trie in the start-up time, you may dispatch your routes with efficiency</li>
+<li><a href="https://github.com/iresty/lua-resty-libr3">lua-resty-libr3</a> — High-performance path dispatching library base on <a href="https://github.com/c9s/r3">libr3</a> for OpenResty</li>
+</ul>
+<h4 id="traffic-management">Traffic Management</h4>
+<ul>
+<li><a href="https://github.com/timebug/lua-resty-redis-ratelimit">lua-resty-redis-ratelimit</a> — Limit the request processing rate between multiple NGINX instances backed by Redis</li>
+<li><a href="https://github.com/upyun/lua-resty-limit-rate">lua-resty-limit-rate</a> - Lua module for limiting request rate for OpenResty/ngx_lua, using the &quot;token bucket&quot; method</li>
+<li><a href="https://github.com/ElvinEfendi/lua-resty-global-throttle">lua-resty-global-throttle</a> — Distributed rate limiter / throttler based on <a href="https://blog.cloudflare.com/counting-things-a-lot-of-different-things/">Cloudflare&#39;s blog post on approximate sliding window</a></li>
+</ul>
+<h4 id="request-argments-parsers">Request Argments Parsers</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-reqargs">lua-resty-reqargs</a> — Helper to Retrieve application/x-www-form-urlencoded, multipart/form-data, and application/json Request Arguments</li>
+<li><a href="https://github.com/antonheryanto/lua-resty-post">lua-resty-post</a> — HTTP Post Utility for OpenResty (File Uploading Helper)</li>
+<li><a href="https://github.com/agentzh/lua-resty-multipart-parser">lua-resty-multipart-parser</a> — Simple multipart data parser for OpenResty / Lua</li>
+<li><a href="https://github.com/thibaultcha/lua-resty-multipart">lua-resty-multipart</a> — Multipart parsing library for OpenResty</li>
+</ul>
+<h4 id="middleware-and-api-tools">Middleware and API Tools</h4>
+<ul>
+<li><a href="https://getkong.org/">Kong</a> (<a href="https://github.com/Kong/kong">GitHub</a>) — KONG: Microservice Management Layer (Secure, Manage &amp; Extend your APIs and Microservices)</li>
+<li><a href="https://github.com/maiome-development/lsso">LSSO</a> — A Lightweight SSO middleware for Nginx + Lua</li>
+<li><a href="https://github.com/adobe-apiplatform/apigateway">apigateway</a> — A Performant API Gateway based on Nginx and OpenResty</li>
+<li><a href="https://github.com/3scale/apicast">3scale APIcast</a> — API gateway module of Red Hat 3scale API Management</li>
+<li><a href="https://github.com/sumory/orange">Sumory Orange</a> — API Gateway</li>
+<li><a href="https://github.com/monarchapis/gateway-openresty">Monarch API Gateway</a>  — OpenResty-based API Gateway</li>
+<li><a href="https://github.com/iresty/apisix">APISIX</a> — APISIX is a Cloud-Native Microservices API Gateway</li>
+<li><a href="https://github.com/ysugimoto/lua-resty-grpc-gateway">lua-resty-grpc-gateway</a> — Provides request transformation between REST &lt;-&gt; gRPC with Openresty</li>
+<li><a href="https://github.com/upyun/slardar">Slardar</a> - Updating your upstream list and run lua scripts without reloading Nginx</li>
+</ul>
+<h4 id="templating">Templating</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-template">lua-resty-template</a> — A Compiling (HTML) templating engine for Lua and OpenResty</li>
+<li><a href="https://github.com/openresty/lemplate">lemplate</a> — OpenResty/Lua template framework implementing Perl&#39;s TT2 templating language</li>
+<li><a href="https://github.com/DoubleSpout/lua-resty-aries">lua-resty-aries</a> — OpenResty and Lua multi-function template, it can correct show your error line</li>
+<li><a href="https://github.com/leafo/etlua">etlua</a> — Embedded Lua templates</li>
+<li><a href="https://github.com/chenxianyu2015/liquid-lua">liquid-lua</a> — A Lua implementation of Liquid for OpenResty platform</li>
+<li><a href="https://github.com/lloydzhou/lua-resty-tmpl">lua-resty-tmpl</a> — A simple template engine for Lua and OpenResty, derived from <a href="https://github.com/dannote/lua-template">lua-template</a>.</li>
+<li><a href="https://github.com/bungle/lua-resty-template#alternatives">Alternatives</a> — Some alternative Lua templating solutions that may work just fine with OpenResty</li>
+</ul>
+<h4 id="validation">Validation</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-validation">lua-resty-validation</a> — An extendable chaining validation and filtering library for Lua and OpenResty</li>
+<li><a href="https://github.com/sailorproject/valua">valua</a> — Validation for lua! A module for making chained validations. Create your objects, append your tests, use and reuse it!</li>
+</ul>
+<h4 id="authentication-and-authorization">Authentication and Authorization</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-macaroons">lua-resty-macaroons</a> — LuaJIT FFI Bindings to libmacaroons – Macaroons are flexible authorization credentials that support decentralized delegation, attenuation, and verification</li>
+<li><a href="https://github.com/pingidentity/lua-resty-openidc">lua-resty-openidc</a> — lua-resty-openidc is a library for NGINX implementing the OpenID Connect Relying Party (RP) and the OAuth 2.0 Resource Server (RS) functionality</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-duo-mobile">lua-resty-duo-mobile</a> — OpenResty client for the Duo Mobile Auth API</li>
+<li><a href="https://github.com/hypebeast/micro-auth">micro-auth</a> — A microservice that makes adding authentication with Google and Github to your application easy (Note: before using it in production, see: <a href="https://news.ycombinator.com/item?id=13682682">https://news.ycombinator.com/item?id=13682682</a> — hopefully we can remove this remark in a future)</li>
+<li><a href="https://github.com/casbin-lua/lua-resty-casbin">lua-resty-casbin</a> — Casbin is an authorization library that supports access control models like ACL, RBAC, ABAC in Lua (OpenResty). This is a Casbin authorization plugin for OpenResty.</li>
+</ul>
+<h4 id="cryptography">Cryptography</h4>
+<ul>
+<li><a href="https://github.com/openresty/lua-resty-string">lua-resty-string</a> — String utilities and common hash functions for ngx_lua and LuaJIT</li>
+<li><a href="https://github.com/fffonion/lua-resty-openssl">lua-resty-openssl</a> — FFI-based OpenSSL binding for LuaJIT</li>
+<li><a href="https://github.com/bungle/lua-resty-nettle">lua-resty-nettle</a> — LuaJIT FFI bindings for Nettle (a low-level cryptographic library)</li>
+<li><a href="https://github.com/agentzh/lua-resty-chash">lua-resty-chash</a> — A generic consistent hash implementation for OpenResty/Lua</li>
+<li><a href="https://github.com/ruoshan/lua-resty-jump-consistent-hash">lua-resty-jump-consistent-hash</a> — Jump Consistent Hash for LuaJIT</li>
+<li><a href="https://github.com/fffonion/lua-resty-acme">lua-resty-acme</a> — Automatic Let&#39;s Encrypt certificate serving and Lua implementation of ACMEv2 procotol</li>
+<li><a href="https://github.com/torhve/lua-resty-letsencrypt">lua-resty-letsencrypt</a> — Automatically fetch and renew TLS certificates on the fly using LetsEncrypt CA.</li>
+<li><a href="https://github.com/GUI/lua-resty-auto-ssl">lua-resty-auto-ssl</a> — On the fly (and free) SSL registration and renewal inside OpenResty/nginx with Let&#39;s Encrypt</li>
+<li><a href="https://github.com/aptise/lua-resty-peter_sslers">lua-resty-peter_sslers</a> — Automaticly loads/cache SSL certificates based on SNI from caches or backend json servers</li>
+<li><a href="https://github.com/bungle/lua-resty-murmurhash2">lua-resty-murmurhash2</a> — LuaJIT MurmurHash 2 bindings to Nginx / OpenResty murmurhash2 implementation</li>
+<li><a href="https://github.com/jamesmarlowe/lua-resty-hmac">lua-resty-hmac</a> — Lua driver for making and receiving hmac signed requests</li>
+<li><a href="https://github.com/bungle/lua-resty-scrypt">lua-resty-scrypt</a> — LuaJIT FFI-based scrypt library for OpenResty</li>
+<li><a href="https://github.com/bungle/lua-resty-xxhash">lua-resty-xxhash</a> — LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm</li>
+<li><a href="https://github.com/spacewander/lua-resty-rsa">lua-resty-rsa</a> — RSA functions for LuaJIT</li>
+<li><a href="https://github.com/tmthrgd/lua-resty-aead">lua-resty-aead</a> — AEAD cipher library for lua-nginx-module. BoringSSL only.</li>
+<li><a href="https://github.com/golgote/lua-resty-hawk">lua-resty-hawk</a> — Hawk authentication on Nginx with Lua and OpenResty</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-urandom">lua-resty-urandom</a> — Buffered wrapper for Linux/BSD kernel space CSPRNG</li>
+<li><a href="https://github.com/mynameiscfed/lua-resty-fastpbkdf2">lua-resty-fastpbkdf2</a> — Lua bindings to fastpbkdf2</li>
+<li><a href="https://github.com/thibaultCha/lua-argon2-ffi">lua-argon2-ffi</a> — LuaJIT FFI binding for the Argon2 password hashing algorithm</li>
+<li><a href="https://github.com/lilien1010/lua-resty-des">lua-resty-des</a> — Lua interface to make DES ECB encryption</li>
+<li><a href="https://github.com/TheNorthMemory/WXBizMsgCrypt">WXBizMsgCrypt</a> — Lua version of the WeChat Message Cryptography</li>
+<li><a href="https://github.com/jprjr/luasodium">luasodium</a> - Lua bindings to libsodium, compatible with both Lua C and LuaJIT FFI APIs.</li>
+</ul>
+<h4 id="networking">Networking</h4>
+<ul>
+<li><a href="https://github.com/pintsized/lua-resty-http">lua-resty-http</a> by <a href="https://github.com/pintsized">@pintsized</a> — Lua HTTP client cosocket driver for OpenResty / ngx_lua</li>
+<li><a href="https://github.com/liseen/lua-resty-http">lua-resty-http</a> by <a href="https://github.com/liseen">@liseen</a> — Lua http client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/DorianGray/lua-resty-http">lua-resty-http</a> by <a href="https://github.com/DorianGray">@DorianGray</a> — Lua HTTP client driver for ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/bakins/lua-resty-http-simple">lua-resty-http-simple</a> — Simple Lua HTTP client driver for ngx_lua</li>
+<li><a href="https://github.com/timebug/lua-resty-httpipe">lua-resty-httpipe</a> — Lua HTTP client cosocket driver for OpenResty / ngx_lua</li>
+<li><a href="https://github.com/oneoo/lua-resty-httpclient">lua-resty-httpclient</a> — Nonblocking Lua HTTP Client library for aLiLua &amp; ngx_lua</li>
+<li><a href="https://github.com/mah0x211/lua-httpcli-resty">lua-httpcli-resty</a> — Lua HTTP client module for OpenResty</li>
+<li><a href="https://github.com/tokers/lua-resty-requests">lua-resty-requests</a> — Yet Another HTTP Library for OpenResty</li>
+<li><a href="https://github.com/openresty/lua-resty-websocket">lua-resty-websocket</a> — Lua WebSocket implementation for the ngx_lua module</li>
+<li><a href="https://github.com/api7/lua-resty-ipmatcher">lua-resty-ipmatcher</a> — High performance match IP address for OpenResty Lua</li>
+<li><a href="https://github.com/Kong/lua-resty-mediador">lua-resty-mediador</a> — Determines address of proxied request and does IP address / CIDR blocks handling (both IPv4 and IPv6)</li>
+<li><a href="https://github.com/hamishforbes/lua-resty-iputils">lua-resty-iputils</a> — Utility functions for working with IP addresses in OpenResty</li>
+<li><a href="https://github.com/jamesmarlowe/lua-resty-readurl">lua-resty-readurl</a> — Lua library for capturing urls, decoding, and logging results</li>
+<li><a href="https://github.com/Kong/lua-resty-dns-client">lua-resty-dns-client</a> — Lua library containing a DNS client, several utilities, and a load-balancer</li>
+<li><a href="https://github.com/vislee/lua-resty-dns-server">lua-resty-dns-server</a> — Lua DNS server driver for the OpenResty</li>
+<li><a href="https://github.com/hamishforbes/lua-resty-upstream">lua-resty-upstream</a> — Upstream connection load balancing and failover module</li>
+<li><a href="https://github.com/upyun/lua-resty-checkups">lua-resty-checkups</a> — Manage Nginx upstreams in pure ngx_lua</li>
+<li><a href="https://github.com/starius/lua-resty-socks5">lua-resty-socks5</a> — Lua SOCKS5 client for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-waf">lua-resty-waf</a> — High-performance WAF built on the OpenResty stack</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-tarpit">lua-resty-tarpit</a> — OpenResty response time inflation, capture and delay unwanted requests</li>
+<li><a href="https://github.com/mosasiru/lua-resty-jsonrpc-batch">lua-resty-jsonrpc-batch</a> — JSON-RPC 2.0 Batch Request protocol module for OpenResty</li>
+<li><a href="https://github.com/openresty/lua-resty-limit-traffic">lua-resty-limit-traffic</a> — Lua library for limiting and controlling traffic in OpenResty/ngx_lua</li>
+<li><a href="https://github.com/membphis/lua-resty-limits">lua-resty-limits</a> — Limits request every second or minute</li>
+<li><a href="https://github.com/benagricola/lua-resty-fastcgi">lua-resty-fastcgi</a> — Lua FCGI client driver for ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/Ahsialh/lua-resty-ftpclient">lua-resty-ftpclient</a> — Lua FTP client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/cloudflare/lua-capnproto">lua-capnproto</a> — Cap’n Proto is an insanely fast data interchange format and capability-based RPC system</li>
+<li><a href="https://github.com/pinge/lua-resty-tornera">lua-resty-tornera</a> — A traffic replay tool with an easy to use HTTP API for OpenResty / LuaJIT</li>
+<li><a href="https://github.com/hamishforbes/lua-resty-consul">lua-resty-consul</a> — Library to interface with the consul HTTP API from ngx_lua</li>
+<li><a href="https://github.com/rrfeng/lua-resty-upstream-etcd">lua-resty-upstream-etcd</a> — A Lua module for OpenResty, can dynamically update the upstreams from etcd and Kubernetes</li>
+<li><a href="https://github.com/Kong/lua-resty-healthcheck">lua-resty-healthcheck</a> — Healthcheck library for OpenResty to validate upstream service status</li>
+<li><a href="https://github.com/openresty/lua-resty-balancer">lua-resty-balancer</a> — A generic consistent hash implementation for OpenResty</li>
+<li><a href="https://github.com/fffonion/lua-resty-sniproxy">lua-resty-sniproxy</a> — SNI Proxy based on stream-lua-nginx-module</li>
+<li><a href="https://github.com/fffonion/lua-resty-multiplexer">lua-resty-multiplexer</a> — Transparent port service multiplexer for stream subsystem</li>
+<li><a href="https://github.com/tokers/lua-resty-http2">lua-resty-http2</a> — The HTTP/2 Protocol (Client Side) Implementation for OpenResty</li>
+<li><a href="https://github.com/mmatuska/lua-tus-server">lua-tus-server</a> - Server-side implementation of the tus protocol in Lua</li>
+<li><a href="https://github.com/vislee/lua-resty-wrr">lua-resty-wrr</a> - weight round robin for Openresty. Similar to ngx_http/stream_upstream_round_robin module.</li>
+</ul>
+<h4 id="databases-and-storages">Databases and Storages</h4>
+<ul>
+<li><a href="https://github.com/openresty/lua-resty-mysql">lua-resty-mysql</a> — Non-blocking Lua MySQL client driver for ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/myselfghost/lua-resty-mysql-connector">lua-resty-mysql-connector</a> —
+Connection utilities for lua-resty-mysql, support for read and write separation，support for instantiating different databases</li>
+<li><a href="https://github.com/azurewang/lua-resty-postgres">lua-resty-postgres</a> — Nonblocking Lua PostgreSQL driver library for ngx_lua</li>
+<li><a href="https://github.com/leafo/pgmoon">pgmoon</a> — A pure Lua Postgres driver for use in OpenResy &amp; more</li>
+<li><a href="https://github.com/ZigzagAK/lua-resty-couchbase">lua-resty-couchbase</a> — OpenResty CouchBase module</li>
+<li><a href="https://github.com/iqiyi/lua-resty-couchbase">iqiyi/lua-resty-couchbase</a> — Lua couchbase client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/paragasu/lua-resty-couchdb">lua-resty-couchdb</a> — Lua resty minimal couchdb client using nginx proxy ngx.location_capture</li>
+<li><a href="https://github.com/kran/lua-resty-orm">lua-resty-orm</a> — Simple ORM for OpenResty</li>
+<li><a href="https://github.com/pronan/lua-resty-mvc">lua-resty-mvc</a> — You don&#39;t need that complicated MVC framework! With just a plain folder with several simple files, you can enjoy basic but most frequently used MVC features.</li>
+<li><a href="https://github.com/openresty/lua-resty-memcached">lua-resty-memcached</a> — Lua memcached client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/openresty/lua-resty-redis">lua-resty-redis</a> — Lua Redis client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/pintsized/lua-resty-redis-connector">lua-resty-redis-connector</a> — Connection utilities for lua-resty-redis, making it easy and reliable to connect to Redis hosts, either directly or via Redis Sentinel</li>
+<li><a href="https://github.com/steve0511/resty-redis-cluster">resty-redis-cluster</a> — OpenResty Redis cluster-aware client based on resty-redis-cluster</li>
+<li><a href="https://github.com/cuiweixie/lua-resty-redis-cluster">lua-resty-redis-cluster</a> — OpenResty Redis Cluster Client</li>
+<li><a href="https://github.com/anjia0532/lua-resty-redis-util">lua-resty-redis-util</a> — Based on <code>lua-resty-redis</code> and makes it easier to operate the Redis</li>
+<li><a href="https://github.com/thibaultCha/lua-cassandra">lua-cassandra</a> - Pure Lua, feature-rich, and cluster-aware Cassandra client</li>
+<li><a href="https://github.com/jbochi/lua-resty-cassandra">lua-resty-cassandra</a> — Pure Lua Cassandra client using CQL binary protocol</li>
+<li><a href="https://github.com/jie123108/lua-resty-bloomd">lua-resty-bloomd</a> — A client library based on ngx_lua to interface with <a href="https://github.com/armon/bloomd">bloomd servers</a></li>
+<li><a href="https://github.com/bakins/lua-resty-riak">lua-resty-riak</a> — Lua riak protocol buffer client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/isage/lua-resty-moongoo">lua-resty-moongoo</a> — MongoDB library for OpenResty, highly inspired by Perl Mango</li>
+<li><a href="https://github.com/Olivine-Labs/resty-mongol/">lua-resty-mongol</a> — Native Lua Mongodb driver which supports both luasocket and ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/nightsailer/lua-resty-mongo">lua-resty-mongo</a> — Lua mongodb client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/boyxuper/lua-mongo">lua-mongo</a> — A simple Lua Mongo driver (a fork made to work with co-sockets)</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-influx">lua-resty-influx</a> — OpenResty client for InfluxDB</li>
+<li><a href="https://github.com/lblasc/lua-telegraf">lua-telegraf</a> — Lua/OpenResty client for Telegraf/InfluxDB</li>
+<li><a href="https://github.com/cloudflare/lua-resty-kyototycoon">lua-resty-kyototycoon</a> by <a href="https://github.com/cloudflare/">@cloudflare</a> — Lua client driver for KyotoTycoon using its native wire protocol (OpenResty/ngx_lua)</li>
+<li><a href="https://github.com/sjnam/lua-resty-kyototycoon">lua-resty-kyototycoon</a> by <a href="https://github.com/sjnam/">@sjnam</a> — Lua client driver for KyotoTycoon using its binary protocol</li>
+<li><a href="https://github.com/perusio/lua-resty-tarantool">lua-resty-tarantool</a> — Library for working with Tarantool from Nginx with the embedded Lua module or with OpeRresty</li>
+<li><a href="https://github.com/ziontab/lua-nginx-tarantool">lua-nginx-tarantool</a> — A driver for a NoSQL database in a Lua script Tarantool build on fast nginx cosockets</li>
+<li><a href="https://github.com/LazyZhu/lua-resty-ssdb">lua-resty-ssdb</a> — Lua ssdb client driver for the ngx_lua based on the cosocket API, SSDB is a leveldb server</li>
+<li><a href="https://github.com/holys/ledis-openresty">ledis-openresty</a> — Lua LedisDB client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/azurewang/lua-resty-fastdfs">lua-resty-fastdfs</a> — Nonblocking Lua FastDFS driver library for ngx_lua</li>
+<li><a href="https://github.com/mediba-system/lua-resty-statsd">lua-resty-statsd</a> — StatsD client for OpenResty</li>
+<li><a href="https://github.com/mediba-system/lua-resty-dogstatsd">lua-resty-dogstatsd</a> — A client for DogStatsD, an extension of the StatsD metric server for Datadog. Using nginx cosocket API</li>
+<li><a href="https://github.com/lonelyplanet/openresty-statsd">openresty-statsd</a> — A Lua module for OpenResty to send metrics to StatsD</li>
+<li><a href="https://github.com/duhoobo/lua-resty-smtp">lua-resty-smtp</a> — A bridge between HTTP and SMTP</li>
+<li><a href="https://github.com/GUI/lua-resty-mail">lua-resty-mail</a> — A high-level, easy to use, and non-blocking email and SMTP library for OpenResty</li>
+<li><a href="https://github.com/sunkan/lua-resty-mogilefs">lua-resty-mogilefs</a> — A Lua mogilefs client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/api7/lua-resty-etcd">lua-resty-etcd</a> — Nonblocking Lua etcd driver library for OpenResty</li>
+<li><a href="https://github.com/rainingmaster/lua-shdict-nginx-module">lua-shdict-nginx-module</a> — An upgraded version of <a href="https://github.com/openresty/lua-nginx-module#ngxshareddict">ngx.shared.DICT</a>, capable of sharing data between <code>stream</code> and <code>http</code> modules</li>
+</ul>
+<h4 id="testing-and-profiling">Testing and Profiling</h4>
+<ul>
+<li><a href="http://search.cpan.org/~agent/Test-Nginx-0.24/lib/Test/Nginx.pm">Test::Nginx</a> — Data-driven test scaffold for Nginx C module and OpenResty Lua library development (see real-word tests in <a href="https://github.com/openresty/lua-resty-redis/tree/master/t">lua-resty-redis</a>)</li>
+<li><a href="https://github.com/openresty/nginx-systemtap-toolkit">nginx-systemtap-toolkit</a> — Real-time analyzing and diagnosing tools for Nginx based on SystemTap</li>
+<li><a href="https://github.com/openresty/stapxx">stapxx</a> — Simple macro language extentions to systemtap</li>
+<li><a href="https://github.com/brendangregg/FlameGraph">FlameGraph</a> — Flame graphs are a visualization of profiled software, allowing the most frequent code-paths to be identified quickly and accurately</li>
+<li><a href="https://github.com/thibaultCha/lua-resty-busted">lua-resty-busted</a> — Test OpenResty scripts with busted</li>
+<li><a href="https://github.com/membphis/lua-resty-test">lua-resty-test</a> — Test frame based on OpenResty</li>
+<li><a href="http://olivinelabs.com/busted/">busted</a> (<a href="https://github.com/Olivine-Labs/busted">Github</a>) — Elegant Lua unit testing</li>
+<li><a href="http://telescope.luaforge.net/">Telescope</a> (<a href="https://github.com/norman/telescope">Github</a>) — Telescope is a highly customizable test library for Lua that allows for declarative tests with nested contexts</li>
+</ul>
+<h4 id="message-queuing-and-task-management">Message Queuing and Task Management</h4>
+<ul>
+<li><a href="https://github.com/pintsized/lua-resty-qless">lua-resty-qless</a> — Lua binding to Qless (Queue / Pipeline management) for OpenResty (see also: <a href="https://github.com/hamishforbes/lua-resty-qless-web">Qless Web Interface</a> implemented with OpenResty)</li>
+<li><a href="https://github.com/wingify/lua-resty-rabbitmqstomp">lua-resty-rabbitmqstomp</a> — Lua RabbitMQ client library which uses cosocket api for communication over STOMP 1.2 with a RabbitMQ broker which has the STOMP plugin</li>
+<li><a href="https://github.com/zhhchen/lua-resty-gearman">lua-resty-gearman</a> — Lua gearman client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/doujiang24/lua-resty-kafka">lua-resty-kafka</a> — Lua kafka client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/bakins/lua-resty-beanstalkd">lua-resty-beanstalkd</a> — Lua beanstalkd client driver for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/bakins/lua-resty-ironmq">lua-resty-ironmq</a> — Simple IronMQ client for OpenResty</li>
+<li><a href="https://github.com/rainingmaster/lua-resty-nsq">lua-resty-nsq</a> — <a href="https://nsq.io/">NSQ</a> client for for the ngx_lua based on the cosocket API</li>
+</ul>
+<h4 id="bar-codes-and-qr-codes">Bar Codes and QR Codes</h4>
+<ul>
+<li><a href="https://github.com/dcshi/lua-resty-QRcode">lua-resty-QRcode</a> — QR encode tool for ngx_lua</li>
+<li><a href="https://github.com/dcshi/lua-resty-QRDecode">lua-resty-QRDecode</a> — QR decoder for ngx_lua</li>
+</ul>
+<h4 id="utilities">Utilities</h4>
+<ul>
+<li><a href="https://github.com/Kong/lua-resty-worker-manager">lua-resty-worker-manager</a> — Tracks worker processes and nodes starting / restarting / reloading / stopping</li>
+<li><a href="https://github.com/Kong/lua-resty-worker-events">lua-resty-worker-events</a> — Inter process events for Nginx worker processes</li>
+<li><a href="https://github.com/starius/lua-resty-batch">lua-resty-batch</a> — Merge multiple requests in nginx to a single sub-request</li>
+<li><a href="https://github.com/juce/lua-resty-shell">lua-resty-shell</a> — Tiny non-blocking subprocess / shell library to use with OpenResty application server (using <a href="https://github.com/juce/sockproc">sockproc</a>)</li>
+<li><a href="https://github.com/jprjr/lua-resty-exec">lua-resty-exec</a> — Non-blocking, non-shell-spawning, streaming and non-streaming subprocess library (using <a href="https://github.com/jprjr/sockexec">sockexec</a>)</li>
+<li><a href="https://github.com/saks/lua-resty-repl">lua-resty-repl</a> — Interactive console (REPL) for OpenResty and LuaJIT code</li>
+<li><a href="https://github.com/bungle/lua-resty-fileinfo">lua-resty-fileinfo</a> — LuaJIT FFI bindings to libmagic, magic number recognition library - tries to determine file types</li>
+<li><a href="https://github.com/spacewander/lua-resty-base-encoding">lua-resty-base-encoding</a> — Provides base32/base16/... encoding for OpenResty applications.</li>
+<li><a href="https://github.com/spacewander/lua-resty-mime-sniff">lua-resty-mime-sniff</a> — Sniff the real MIME type of given data</li>
+<li><a href="https://github.com/bungle/lua-resty-taglib">lua-resty-taglib</a> — LuaJIT FFI bindings for TagLib - An Audio Meta-Data Library</li>
+<li><a href="https://github.com/bungle/lua-resty-uuid">lua-resty-uuid</a> — LuaJIT FFI bindings for libuuid, a DCE compatible Universally Unique Identifier library</li>
+<li><a href="https://github.com/thibaultCha/lua-resty-jit-uuid">lua-resty-jit-uuid</a> — A pure LuaJIT (no dependencies) uuid generator tuned for performance</li>
+<li><a href="https://github.com/hqzxzb/lua-resty-unique-id">lua-resty-unique-id</a> — Lua library for generating a unique ID for OpenResty</li>
+<li><a href="https://github.com/bungle/lua-resty-tsort">lua-resty-tsort</a> — Performs a topological sort on input data</li>
+<li><a href="https://github.com/bungle/lua-resty-postal">lua-resty-postal</a> — LuaJIT FFI Bindings to libpostal – a fast statistical parser/normalizer for street addresses around the world.</li>
+<li><a href="https://github.com/p0pr0ck5/lua-resty-libinjection">lua-resty-libinjection</a> — LuaJIT FFI bindings for libinjection, a SQL/SQLi tokenizer and analyzer</li>
+<li><a href="https://github.com/thibaultcha/lua-resty-socket">lua-resty-socket</a> — Automatic LuaSocket/cosockets compatibility module</li>
+<li><a href="https://github.com/kikito/inspect.lua">Inspect</a> — Inspect is a library that transforms any Lua value into a human-readable representation. It is especially useful for debugging errors in tables.</li>
+<li><a href="https://github.com/lilien1010/lua-resty-maxminddb">lua-resty-maxminddb</a> by <a href="https://github.com/lilien1010">@lilien1010</a> — LuaJIT FFI Bindings to official libmaxminddb, to get ip location with ip database offered by maxmind</li>
+<li><a href="https://github.com/anjia0532/lua-resty-maxminddb">lua-resty-maxminddb</a> by <a href="https://github.com/anjia0532">@anjia0532</a> — A Lua library for reading MaxMind&#39;s Geolocation database format (aka mmdb or geoip2)</li>
+<li><a href="https://github.com/api7/lua-resty-radixtree">lua-resty-radixtree</a> — Lua / OpenResty implementation based on FFI for <a href="https://github.com/antirez/rax">rax</a></li>
+<li><a href="https://github.com/Kong/lua-resty-counter">lua-resty-counter</a> — Lock-free counter for OpenResty</li>
+<li><a href="https://github.com/upyun/lua-resty-sync">lua-resty-sync</a> - This lua-resty library help you to synchronize data(from redis, mysql, memcached and so on) based on the version changes</li>
+<li><a href="https://github.com/rainingmaster/NetStorageKit-Lua">NetStorageKit-Lua</a> — Akamai Netstorage (File/Object Store) API for Openresty</li>
+<li><a href="https://github.com/satrobit/lua-resty-wirefilter">lua-resty-wirefilter</a> — LuaJIT FFI bindings to wirefilter - An execution engine for Wireshark-like filters</li>
+</ul>
+<h4 id="date-and-time">Date and Time</h4>
+<p>These libraries are not build to using <code>lua-nginx-module</code>s date time functions (except luatz) like <a href="https://github.com/openresty/lua-nginx-module#ngxtoday"><code>ngx.today</code></a>, <a href="https://github.com/openresty/lua-nginx-module#ngxtime"><code>ngx.time</code></a>, <a href="https://github.com/openresty/lua-nginx-module#ngxnow"><code>ngx.now</code></a>, <a href="https://github.com/openresty/lua-nginx-module#ngxlocaltime"><code>ngx.localtime</code></a>, or <a href="https://github.com/openresty/lua-nginx-module#ngxutctime"><code>ngx.utctime</code></a>, but they may still come handy. At some point we may need a more &quot;official&quot; time library for OpenResty.</p>
+<ul>
+<li><a href="https://github.com/daurnimator/luatz">luatz</a> — A Lua library for time and date manipulation (has a fallback to <code>ngx.now</code>)</li>
+<li><a href="https://github.com/Tieske/date">LuaDate</a> — Lua Date and Time module for Lua 5.x</li>
+<li><a href="http://scilua.org/time.html">SciLua Time Library</a> — Library for the manipulation of dates and periods according to the Gregorian calendar, i.e. the internationally accepted calendar for most uses</li>
+</ul>
+<h4 id="compression">Compression</h4>
+<ul>
+<li><a href="https://github.com/doujiang24/lua-resty-zip">lua-resty-zip</a> — ZIP functions(compress/uncompress) for LuaJIT</li>
+<li><a href="https://github.com/bungle/lua-resty-snappy">lua-resty-snappy</a> — LuaJIT FFI bindings for Snappy, a fast compressor/decompressor</li>
+<li><a href="https://github.com/sjnam/lua-resty-brotli">lua-resty-brotli</a> — LuaJIT FFI bindings for Google Brotli</li>
+<li><a href="https://github.com/sjnam/lua-resty-zstd">lua-resty-zstd</a> —  LuaJIT bindings to Facebook Zstandard using FFI</li>
+</ul>
+<h4 id="text-formats">Text Formats</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-hoedown">lua-resty-hoedown</a> — LuaJIT FFI bindings to Hoedown, a standards compliant, fast, secure markdown processing library in C</li>
+<li><a href="https://github.com/craigbarnes/lua-gumbo">lua-gumbo</a> — Lua bindings for the Gumbo HTML5 parsing library, with a set of DOM APIs implemented in pure Lua</li>
+<li><a href="https://github.com/bungle/lua-resty-sass">lua-resty-sass</a> — LuaJIT FFI bindings for libsass - A C/C++ implementation of a Sass compiler (<a href="http://libsass.org/">http://libsass.org/</a>)</li>
+<li><a href="https://github.com/bungle/lua-resty-lanli">lua-resty-lanli</a> — LuaJIT FFI Bindings to Lanli HTML Sanitizer Library</li>
+<li><a href="https://github.com/doujiang24/lua-resty-ini">lua-resty-ini</a> —  Lua INI-file parser</li>
+<li><a href="https://github.com/cloudflare/lua-re2">lua-re2</a> — C and Lua wrapper for RE2 regular expression library.</li>
+<li><a href="https://github.com/cloudflare/lua-aho-corasick">lua-aho-corasick</a> — C++ and Lua Implementation of the Aho-Corasick (AC) string matching algorithm</li>
+<li><a href="https://github.com/cloudflare/lua-resty-json">lua-resty-json</a> — JSON library for Lua and C (decoder only).</li>
+<li><a href="https://github.com/bungle/lua-resty-libcjson">lua-resty-libcjson</a> — LuaJIT FFI-based cJSON library for OpenResty</li>
+<li><a href="https://github.com/bungle/lua-resty-prettycjson">lua-resty-prettycjson</a> — Lua cJSON Pretty Formatter</li>
+<li><a href="https://github.com/api7/jsonschema">jsonschema</a> — JSON schema validator</li>
+<li><a href="https://github.com/tianchaijz/lua-resty-jsonschema">lua-resty-jsonschema</a> — <a href="https://github.com/tianchaijz/lua-resty-jsonschema">https://github.com/tianchaijz/lua-resty-jsonschema</a></li>
+<li><a href="https://github.com/sjnam/lua-laxjson">lua-laxjson</a> - Lua binding to a relaxed streaming JSON parser, <a href="https://github.com/andrewrk/liblaxjson">liblaxjson</a> for LuaJIT using FFI</li>
+<li><a href="https://github.com/bungle/lua-resty-utf8rewind">lua-resty-utf8rewind</a> — LuaJIT FFI bindings for utf8rewind - a system library written in C designed to extend the default string handling functions with support for UTF-8 encoded text</li>
+<li><a href="https://github.com/bungle/lua-resty-unistring">lua-resty-unistring</a> — LuaJIT FFI bindings for GNU libunistring - A Unicode string manipulation lIbrary (<a href="https://www.gnu.org/software/libunistring/">https://www.gnu.org/software/libunistring/</a>)</li>
+<li><a href="https://github.com/detailyang/lua-resty-htmlentities">lua-resty-htmlentities</a> — Backport the entities to LuaJIT with the FFI binding as the entities to UTF-8 decoder</li>
+<li><a href="https://github.com/detailyang/lua-resty-jsdecode">lua-resty-jsdecode</a> — Javascript Escape Notation decoding to UTF-8 bytes</li>
+<li><a href="https://github.com/weibreeze/lua-resty-breeze">lua-resty-breeze</a> — Breeze serialize for Lua and OpenResty</li>
+</ul>
+<h4 id="binary-formats">Binary Formats</h4>
+<ul>
+<li><a href="https://github.com/chronolaw/lua-resty-msgpack">lua-resty-msgpack</a> — Lua Message Pack for OpenResty</li>
+<li><a href="https://github.com/catwell/luajit-msgpack-pure">luajit-msgpack-pure</a> — MessagePack for LuaJIT (using FFI, no bindings, V4 API)</li>
+</ul>
+<h4 id="document-formats">Document Formats</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-libxl">lua-resty-libxl</a> — LuaJIT FFI-based LibXL (Excel) library for OpenResty</li>
+<li><a href="https://github.com/bungle/lua-resty-haru">lua-resty-haru</a> — LuaJIT FFI-based libHaru (PDF) library for OpenResty</li>
+<li><a href="https://github.com/tavikukko/lua-resty-hpdf">lua-resty-hpdf</a> — LuaJIT FFI-based libHaru (PDF) library for OpenResty</li>
+</ul>
+<h4 id="image-formats">Image Formats</h4>
+<ul>
+<li><a href="https://github.com/kwanhur/lua-resty-imagick">lua-resty-imagick</a> — Lua bindings to ImageMagick&#39;s MagicWand for LuaJIT using FFI</li>
+<li><a href="https://github.com/isage/lua-imagick">Lua IMagick</a> — Lua Pure-C Bindings to ImageMagick</li>
+<li><a href="https://github.com/leafo/magick">magick</a> — Lua Bindings to ImageMagick for LuaJIT using FFI</li>
+<li><a href="https://github.com/leafo/giflib">giflib</a> — Lua bindings to GIFLIB for LuaJIT using FFI</li>
+<li><a href="https://github.com/nyfair/fi-luajit">fi-luajit</a> — A LuaJIT interface to FreeImage</li>
+<li><a href="https://github.com/jcupitt/lua-vips">lua-vips</a> — LuaJIT binding for libvips</li>
+</ul>
+<h4 id="localization">Localization</h4>
+<ul>
+<li><a href="https://github.com/bungle/lua-resty-gettext">lua-resty-gettext</a> — LuaJIT FFI-based gettext library for OpenResty</li>
+</ul>
+<h4 id="caching">Caching</h4>
+<ul>
+<li><a href="https://github.com/openresty/lua-resty-lrucache">lua-resty-lrucache</a> — Lua-land LRU Cache based on LuaJIT FFI</li>
+<li><a href="https://github.com/thibaultcha/lua-resty-mlcache">lua-resty-mlcache</a> — Modern and flexible multi-level caching using lua-resty-lrucache, shared dictionaries, and cache stampede protection.</li>
+<li><a href="https://github.com/mtourne/ngx.shcache">shcache</a> — shcache is an attempt at using ngx.shared.DICT with a caching state machine layed on top</li>
+<li><a href="https://github.com/hamishforbes/lua-resty-tlc">lua-resty-tlc</a> — Two Layer Cache implementation using lua-resty-lrucache and shared dictionaries.</li>
+<li><a href="https://github.com/pintsized/ledge">Ledge</a> — A Lua application for OpenResty, providing HTTP cache functionality for Nginx, using Redis as a cache / metadata store</li>
+<li><a href="https://github.com/lloydzhou/lua-resty-cache">lua-resty-cache</a> — HTTP Cache to Redis, can serve stale response, and using <code>lua-resty-lock</code> only allow one request to populate a new cache</li>
+</ul>
+<h4 id="metrics-and-statistics">Metrics and Statistics</h4>
+<ul>
+<li><a href="https://luameter.com/">LUAMETER</a> — A Lua module for Nginx that records and provides key status and performance metrics, right from within Nginx and in real-time (Proprietary)</li>
+<li><a href="https://github.com/lebinh/ngxtop">ngxtop</a> — Real-Time metrics for nginx server</li>
+<li><a href="https://github.com/Moesif/lua-resty-moesif">lua-resty-moesif</a> — Lua Client Library for Moesif, compatible with OpenResty</li>
+</ul>
+<h4 id="logging">Logging</h4>
+<ul>
+<li><a href="https://github.com/cloudflare/lua-resty-logger-socket">lua-resty-logger-socket</a> — Raw-socket-based Logger Library for Nginx (based on ngx_lua)</li>
+<li><a href="https://github.com/Lumate/lua-nginx-logging">lua-nginx-logging</a> — Logging utilities for Nginx written in Lua</li>
+<li><a href="https://github.com/kedyyan/lua-resty-logger">lua-resty-logger</a> — Custom Logger Library for OpenResty</li>
+<li><a href="https://github.com/detailyang/lua-resty-rfc5424">lua-resty-rfc5424</a> — An implementation of the RFC5424(syslog) in the OpenResty</li>
+<li><a href="https://github.com/msempere/lua-resty-fluentd">lua-resty-fluentd</a> — Lua fluentd logger for the ngx_lua based on the cosocket API</li>
+<li><a href="https://github.com/mediba-system/lua-resty-fluent-logger">lua-resty-fluent-logger</a> — A structured logger for Fluentd (OpenResty / ngx_lua)</li>
+<li><a href="https://github.com/cloudflare/raven-lua">raven-lua</a> — A small Lua interface to Sentry that also has a helpful wrapper function call() that takes any arbitrary Lua function (with arguments) and executes it, traps any errors and reports it automatically to Sentry</li>
+</ul>
+<h4 id="functional-programming">Functional Programming</h4>
+<ul>
+<li><a href="https://github.com/rtsisyk/luafun">Lua Fun</a> — Lua Fun is a high-performance functional programming library for Lua designed with LuaJIT&#39;s trace compiler in mind</li>
+<li><a href="https://github.com/stevedonovan/Penlight">Penlight</a> — Penlight brings together a set of generally useful pure Lua modules, focusing on input data handling (such as reading configuration files), functional programming (such as map, reduce, placeholder expressions, etc), and OS path management</li>
+<li><a href="https://github.com/Yonaba/Moses">Moses</a> — A Lua utility-belt library for functional programming. It complements the built-in Lua table library, making easier operations on arrays, lists, collections</li>
+<li><a href="https://github.com/mirven/underscore.lua">Underscore.lua</a> — Underscore.lua is a Lua library that provides a set of utility functions for dealing with iterators, arrays, tables, and functions</li>
+<li><a href="https://github.com/axmat/lodash.lua">Lodash.lua</a> — A functional programming library for Lua in respect to the Javascript library Lodash</li>
+<li><a href="https://github.com/search?l=Lua&amp;o=desc&amp;q=lua+functional&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93">Search for more &quot;Functional Lua&quot; projects on GitHub...</a></li>
+</ul>
+<h4 id="web-apis">Web APIs</h4>
+<ul>
+<li><a href="https://github.com/jamesmarlowe/lua-resty-github">lua-resty-github</a> — Lua library for using the github api in the ngx_lua nginx module</li>
+<li><a href="https://github.com/jamesmarlowe/lua-resty-hipchat">lua-resty-hipchat</a> — Lua library for using the hipchat api</li>
+<li><a href="https://github.com/saks/lua-resty-newrelic">lua-resty-newrelic</a> — Lua newrelic SDK for the ngx_lua based on the C SDK</li>
+<li><a href="https://github.com/adobe-apiplatform/api-gateway-aws">api-gateway-aws</a> — Lua module for AWS APIs. The missing AWS SDK from Nginx / OpenResty. Use it to proxy AWS APIs in a simple fashion, with any HTTP Client that you prefer.</li>
+<li><a href="https://github.com/grosskur/lua-resty-aws">lua-resty-aws</a> — AWS signature V4 library for OpenResty + Lua</li>
+<li><a href="https://github.com/kiddkai/lua-resty-aws-sdk">lua-resty-aws-sdk</a> — A raw AWS SDK generated from API specification</li>
+<li><a href="https://github.com/paragasu/lua-resty-aws-email">lua-resty-aws-email</a> — Send email using Amazon Simple Email Service(SES) API</li>
+<li><a href="https://github.com/paragasu/lua-resty-aws-auth">lua-resty-aws-auth</a> — Simple Lua resty utilities to generate Amazon v4 authorization and signature headers</li>
+<li><a href="https://github.com/jamesmarlowe/lua-resty-s3">lua-resty-s3</a> — Lua driver for uploading content to Amazon S3</li>
+<li><a href="https://github.com/lilien1010/lua-resty-s3uploader">lua-resty-s3uploader</a> — An AWS S3 upload client，easy to use</li>
+<li><a href="https://github.com/Chewbye/lua-resty-paypal">lua-resty-paypal</a> — Lua Paypal client using express checkout for OpenResty</li>
+<li><a href="https://github.com/icowan/lua-resty-17mon">lua-resty-17mon</a> — ipip.net IP for OpenResty</li>
+<li><a href="https://github.com/aCayF/lua-resty-upyun">lua-resty-upyun</a> — Upyun cloud-based platform</li>
+<li><a href="https://github.com/mashirozx/lua-resty-tencent-cos-signature">lua-resty-tencent-cos-signature</a> Tencent QCloud COS request signature authorization headers generator</li>
+<li><a href="https://github.com/leafo/lua-mailgun">lua-mailgun</a> — A Lua library for sending emails and interacting with the Mailgun API. Compatible with OpenResty via Lapis HTTP API, or any other Lua script via LuaSocket.</li>
+<li><a href="https://github.com/leafo/lua-payments">lua-payments</a> — Bindings to various payment provider APIs for use in Lua (with OpenResty or anything that supports LuaSocket)</li>
+</ul>
+<h4 id="security">Security</h4>
+<ul>
+<li><a href="https://github.com/satrobit/lua-resty-ddos">lua-resty-ddos</a> — This library uses Cookie Validation to detect bots from real users</li>
+<li><a href="https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS">Nginx-Lua-Anti-DDoS</a>) — A Anti-DDoS script to protect Nginx web servers using Lua with a Javascript based authentication puzzle inspired by Cloudflare</li>
+</ul>
+<h4 id="other-sources-for-libraries">Other Sources for Libraries</h4>
+<ul>
+<li><a href="https://opm.openresty.org/">OpenResty Package Manager Repository</a></li>
+<li><a href="https://luarocks.org/">LuaRocks Repository</a> (<a href="https://luarocks.org/search?q=resty&amp;non_root=on">Search for <em>resty</em> libraries in LuaRocks</a>)</li>
+<li><a href="https://github.com/search?o=desc&amp;q=lua-resty+in%3Aname&amp;ref=searchresults&amp;s=stars&amp;type=Repositories&amp;utf8=%E2%9C%93">Github Search for lua-resty-* Libraries</a>, or <a href="https://github.com/search?o=desc&amp;q=lua-resty+in%3Aname&amp;ref=searchresults&amp;s=updated&amp;type=Repositories&amp;utf8=%E2%9C%93">the recently updated ones</a></li>
+<li><a href="https://lua-toolbox.com/">Lua Toolbox</a></li>
+<li><a href="https://luapower.com/">luapower — Lua, JIT, batteries</a></li>
+<li><a href="http://wiki.luajit.org/FFI-Native-Libraries">List of Available LuaJIT Packages</a></li>
+<li><a href="http://wiki.luajit.org/FFI-Bindings">List of Available LuaJIT FFI Bindings</a></li>
+</ul>
+<h2 id="books-and-tutorials">Books and Tutorials</h2>
+<h4 id="books">Books</h4>
+<ul>
+<li><a href="https://www.gitbook.com/book/openresty/programming-openresty/details">Programming OpenResty</a> — Scripting an NGINX-based Web Platform (Work-in-Progress)</li>
+<li><a href="https://github.com/moonbingbing/openresty-best-practices">OpenResty Best Practices</a> (<a href="https://www.gitbook.com/book/moonbingbing/openresty-best-practices/details">GitBook</a>) (Chinese, use e.g. Google Translate)</li>
+</ul>
+<h4 id="tutorials-and-guides">Tutorials and Guides</h4>
+<ul>
+<li><a href="http://openresty.org/download/agentzh-nginx-tutorials-en.html">agentzh&#39;s Nginx Tutorials</a></li>
+<li><a href="http://www.staticshin.com/programming/definitely-an-open-resty-guide/">Definitely an OpenResty Guide</a></li>
+<li><a href="http://www.staticshin.com/top-tens/things-about-openresty.html">Top ten things about OpenResty</a></li>
+<li>The Latest and Greatest from ngx_lua: New Features &amp; Tools (<a href="https://nginx.busyconf.com/activities/53d854c1c9e255cf2d00007b">Summary</a>, <a href="http://agentzh.org/misc/slides/nginx-conf-2014/#1">Slides</a>, <a href="http://agentzh.org/misc/slides/nginx-conf-2014.pdf">PDF</a>, <a href="https://www.youtube.com/watch?v=Z0fQabvVhIk">Video</a>)</li>
+<li><a href="https://github.com/lebinh/nginx-conf">Nginx Configuration Snippets</a> — A collection of useful Nginx configuration snippets</li>
+</ul>
+<h2 id="videos">Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Eo67iTY1Yf8">Getting started with Lapis, the web framework</a></li>
+<li><a href="https://www.youtube.com/watch?v=Cw6Ci9AF23k">Building an HTTP request router with NGINX and Lua - Shopify</a> (Nginx Conf 2015)</li>
+<li><a href="https://www.youtube.com/watch?v=JDNJTkDCH0c">Enabling TLS Cross host Session Resumption with Forward Secrecy via ngx lua</a> (Nginx Conf 2015)</li>
+<li><a href="https://www.youtube.com/watch?v=Z0fQabvVhIk">The Latest and Greatest from ngx_lua: New Features &amp; Tools</a> (Nginx Conf 2014)</li>
+</ul>
+<h2 id="conferences-workshops-and-events">Conferences, Workshops and Events</h2>
+<ul>
+<li><a href="http://con.openresty.org/cn/2016/">OpenResty Con 2016, Shenzen, China</a><ul>
+<li>New Development of OpenResty in 2016 (<a href="http://openresty.org/slides/New-development-of-OpenResty-in-2016.pdf">Slides</a>, <a href="https://youtu.be/H5UFGDaf9Xk">Video in Chinese</a>)</li>
+</ul>
+</li>
+<li><a href="http://www.luasf2016.org/">Lua Workshop 2016, San Francisco, USA</a> (<a href="https://www.lua.org/wshop16.html">Lua.org</a>)<ul>
+<li>Writing Optimal Lua Code for LuaJIT and OpenResty (<a href="https://www.lua.org/wshop16/Zhang.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=FfhEdF40nhQ">Video</a>)</li>
+</ul>
+</li>
+<li><a href="http://www.meetup.com/Bay-Area-OpenResty-Meetup/">Bay Area OpenResty Meetup 2016 / 3</a><ul>
+<li>adobe.io (<a href="http://openresty.org/slides/adobe-io-openresty-meetup.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=EsLO4aE4TWQ">Video</a>)</li>
+<li>KONG (<a href="https://openresty.org/slides/kong_openresty_slides.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=QubcdsDsq_k">Video</a>)</li>
+<li>What&#39;s new in OpenResty for 2016 (<a href="https://openresty.org/slides/Whats-new-in-OpenResty-for-2016.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=fUGXEkdiqmk">Video</a>)</li>
+</ul>
+</li>
+<li><a href="http://www.iresty.com/">OpenResty Con 2015, Beijing, China</a><ul>
+<li>The Past, Present, and Future of OpenResty 2015 (<a href="http://www.iresty.com/download/ebook/2015_con/zhangyichun.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=vUgTHeXM5m8">Video</a>) (In Chinese)</li>
+<li>Developing OpenResty Framework (<a href="http://www.slideshare.net/AapoTalvensaari1/developing-openresty-framework-57404012">Slides</a>, <a href="https://www.youtube.com/watch?v=VqBt5icKCI8">Video</a>)</li>
+<li>Be a Microservice Hero (<a href="http://www.iresty.com/download/ebook/2015_con/zhangshuai.pdf">Slides</a>, <a href="https://www.youtube.com/watch?v=gqRMX8BQD98">Video</a>) (In Chinese)</li>
+</ul>
+</li>
+</ul>
+<h2 id="demo-applications">Demo Applications</h2>
+<ul>
+<li><a href="https://github.com/bungle/iresty">Chat Application presented at OpenResty Conference 2015</a> by <a href="https://github.com/bungle">@bungle</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="https://github.com/LewisJEllis/awesome-lua">awesome-lua</a> by <a href="https://github.com/LewisJEllis">@LewisJEllis</a></li>
+<li><a href="https://github.com/forhappy/awesome-lua">awesome-lua</a> by <a href="https://github.com/forhappy">@forhappy</a></li>
+<li><a href="https://github.com/fcambus/nginx-resources">A collection of resources covering Nginx, Nginx + Lua, OpenResty and Tengine</a></li>
+<li><a href="https://sites.google.com/site/marbux/home/where-lua-is-used">Where Lua is Used</a> and <a href="http://lua-users.org/wiki/LuaUses">Lua Uses</a></li>
+</ul>
+
+	  	</article>
+		</div>
+		<div class="col-md-3">
+			<div id="sidebar">	
+				<div class="toc"></div>
+			</div>			
+		</div>		
+  </div>
+ 
+      <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
+    </div>
+    <script src="/assets/application-48a0c36ddfab25a0c51837d6726354a7.js"></script>
+  </body>
+</html>
